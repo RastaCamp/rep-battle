@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "modes": {
+    "standard": {
+      "id": "standard",
+      "name": "Standard",
+      "lives": 3,
+      "timerEnabled": false,
+      "timerSeconds": 0,
+      "eliminationEnabled": true,
+      "reshuffleOnEmpty": false,
+      "modifiedScoreMultiplier": 0.5,
+      "startingArmor": 0,
+      "startingSkips": 0
+    },
+    "casual": {
+      "id": "casual",
+      "name": "Casual",
+      "lives": 5,
+      "timerEnabled": false,
+      "timerSeconds": 0,
+      "eliminationEnabled": true,
+      "reshuffleOnEmpty": false,
+      "modifiedScoreMultiplier": 0.6,
+      "startingArmor": 1,
+      "startingSkips": 1
+    },
+    "battle": {
+      "id": "battle",
+      "name": "Battle",
+      "lives": 3,
+      "timerEnabled": true,
+      "timerSeconds": 45,
+      "eliminationEnabled": true,
+      "reshuffleOnEmpty": false,
+      "modifiedScoreMultiplier": 0.5,
+      "startingArmor": 0,
+      "startingSkips": 0
+    },
+    "team": {
+      "id": "team",
+      "name": "Team",
+      "lives": 3,
+      "timerEnabled": false,
+      "timerSeconds": 0,
+      "eliminationEnabled": true,
+      "reshuffleOnEmpty": false,
+      "modifiedScoreMultiplier": 0.5,
+      "startingArmor": 0,
+      "startingSkips": 0,
+      "teamMode": true
+    },
+    "solo": {
+      "id": "solo",
+      "name": "Solo",
+      "lives": 3,
+      "timerEnabled": false,
+      "timerSeconds": 0,
+      "eliminationEnabled": false,
+      "reshuffleOnEmpty": true,
+      "modifiedScoreMultiplier": 0.5,
+      "startingArmor": 0,
+      "startingSkips": 0
+    },
+    "quest": {
+      "id": "quest",
+      "name": "Quest",
+      "lives": 8,
+      "timerEnabled": false,
+      "timerSeconds": 0,
+      "eliminationEnabled": true,
+      "reshuffleOnEmpty": true,
+      "modifiedScoreMultiplier": 0.5,
+      "startingArmor": 0,
+      "startingSkips": 1
+    }
+  },
+  "comboRewards": [
+    { "chain": 1, "bonusPoints": 1 },
+    { "chain": 3, "bonusPoints": 2, "armorAll": 0 },
+    { "chain": 5, "bonusPoints": 3, "armorAll": 1 },
+    { "chain": 10, "bonusPoints": 5, "skipAll": 1 }
+  ],
+  "kingGroupReps": 15,
+  "aceDefaultReps": 1,
+  "aceHighReps": 11,
+  "hypePerCombo": 10,
+  "hypePerKing": 15,
+  "hypeMax": 100
+}

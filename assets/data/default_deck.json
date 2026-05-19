@@ -1,0 +1,23 @@
+{
+  "deckId": "default_rep_battle",
+  "name": "Default Rep Battle Deck",
+  "version": 1,
+  "requiresPro": false,
+  "requiresDlc": null,
+  "exercises": {
+    "spades": { "id": "pushups", "name": "Pushups", "modified": "Knee Pushups" },
+    "hearts": { "id": "squats", "name": "Squats", "modified": "Assisted Squats" },
+    "clubs": { "id": "situps", "name": "Situps / Crunches", "modified": "Crunches" },
+    "diamonds": { "id": "mountain_climbers", "name": "Mountain Climbers", "modified": "Slow Mountain Climbers", "repNote": "3 knee drives = 1 rep" }
+  },
+  "queens": {
+    "spades": { "exercise": "pushup_hold", "name": "Pushup Hold", "reps": 30, "unit": "seconds" },
+    "hearts": { "exercise": "wall_sit", "name": "Wall Sit", "reps": 30, "unit": "seconds" },
+    "clubs": { "exercise": "plank", "name": "Plank", "reps": 30, "unit": "seconds" },
+    "diamonds": { "exercise": "mountain_climbers", "name": "Mountain Climbers", "reps": 15 }
+  },
+  "jokers": [
+    { "id": "joker_1", "variant": "custom_challenge", "name": "Custom Challenge" },
+    { "id": "joker_2", "variant": "group_challenge", "name": "Group Challenge" }
+  ]
+}

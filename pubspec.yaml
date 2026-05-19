@@ -1,0 +1,50 @@
+name: rep_battle
+description: Rep Battle - competitive exercise card game
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  audioplayers: ^6.4.0
+  shared_preferences: ^2.5.3
+  provider: ^6.1.5
+  uuid: ^4.5.1
+  file_picker: ^9.2.3
+  path_provider: ^2.1.5
+  path: ^1.9.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/cards/
+    - assets/images/ui/
+    - assets/images/screens/
+    - assets/images/card_backs/
+    - assets/data/
+    - assets/images/npcs/
+    - assets/images/quest/
+    - assets/images/quest/locations/
+    - assets/images/quest/rooms/
+    - assets/images/avatars/
+    - assets/audio/
+    - assets/audio/music/title/
+    - assets/audio/music/play/
+    - assets/audio/music/quest/
+    - assets/audio/music/quest_menu/
+    - assets/audio/music/settings/
+    - assets/audio/music/scoreboard/
+    - assets/audio/sfx/
+    - assets/audio/sfx/confirm/
+    - assets/audio/sfx/decline/
+    - assets/audio/sfx/forfeit/
+    - assets/audio/sfx/victory/

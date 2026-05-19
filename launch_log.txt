@@ -1,0 +1,39 @@
+[Sun 05/17/2026 10:34:24.24] Starting 
+CD ok: C:\Users\mxz\Desktop\projects\rep battle 
+Flutter: C:\flutter\bin\flutter.bat 
+C:\flutter\bin\flutter
+C:\flutter\bin\flutter.bat
+Resolving dependencies...
+Downloading packages...
+  async 2.12.0 (2.13.1 available)
+  characters 1.4.0 (1.4.1 available)
+  cross_file 0.3.5 (0.3.5+2 available)
+  cupertino_icons 1.0.8 (1.0.9 available)
+  fake_async 1.3.2 (1.3.3 available)
+  file_picker 9.2.3 (11.0.2 available)
+  flutter_lints 5.0.0 (6.0.0 available)
+  flutter_plugin_android_lifecycle 2.0.31 (2.0.34 available)
+  leak_tracker 10.0.8 (11.0.2 available)
+  leak_tracker_flutter_testing 3.0.9 (3.0.10 available)
+  leak_tracker_testing 3.0.1 (3.0.2 available)
+  lints 5.1.1 (6.1.0 available)
+  matcher 0.12.17 (0.12.20 available)
+  material_color_utilities 0.11.1 (0.13.0 available)
+  meta 1.16.0 (1.18.2 available)
+  path_provider_android 2.2.19 (2.3.1 available)
+  path_provider_foundation 2.4.2 (2.6.0 available)
+  shared_preferences 2.5.3 (2.5.5 available)
+  shared_preferences_android 2.4.13 (2.4.23 available)
+  shared_preferences_foundation 2.5.4 (2.5.6 available)
+  shared_preferences_platform_interface 2.4.1 (2.4.2 available)
+  source_span 1.10.1 (1.10.2 available)
+  synchronized 3.3.1 (3.4.0+1 available)
+  test_api 0.7.4 (0.7.12 available)
+  vector_math 2.1.4 (2.3.0 available)
+  vm_service 14.3.1 (15.2.0 available)
+  win32 5.13.0 (6.2.0 available)
+Got dependencies!
+27 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+ 
+Exit code: 0 

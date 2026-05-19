@@ -1,0 +1,2013 @@
+{
+  "version": 6,
+  "avatarPathTemplate": "assets/images/npcs/{id}.png",
+  "profiles": [
+    {
+      "id": "anton_40",
+      "name": "Anton",
+      "age": 40,
+      "job": "Garbage collector",
+      "conditions": [
+        "type 2 diabetes",
+        "tired knees"
+      ],
+      "tagline": "Works nights, manages blood sugar between routes.",
+      "bio": "Anton hauls bins before dawn. Type 2 diabetes means he paces himself and chooses modified reps often. Strong grip and stubborn pride keep him in the fight, but long holds drain him fast.",
+      "passRate": 0.58,
+      "modifiedRate": 0.32,
+      "failRate": 0.08,
+      "timingMultiplier": 1.12,
+      "colorArgb": 4283215696,
+      "quotesVictory": [
+        "Night shift strength, baby. Route's not done yet.",
+        "You folded quicker than wet cardboard.",
+        "Bins heavier than that card.",
+        "Blood sugar steady. Ego? Not yours.",
+        "Sun ain't even up and I already won."
+      ],
+      "quotesForfeit": [
+        "Alright, knees voting against me today.",
+        "Need five minutes and a protein bar.",
+        "That hold cooked me.",
+        "Modified wasn't enough this round.",
+        "Tomorrow night I'm taking that win back."
+      ],
+      "quotesModified": [
+        "Modified reps still move the mountain.",
+        "Knees screaming, pride whispering.",
+        "I work smart before I work broken."
+      ],
+      "quotesClutch": [
+        "That one almost folded me.",
+        "Still standing. Barely.",
+        "Trash routes trained me for this."
+      ],
+      "quotesStartMatch": [
+        "Let's get this route started.",
+        "Hope y'all stretched.",
+        "Night shift energy."
+      ],
+      "quotesLegendary": [
+        "Steel bins forged steel hands.",
+        "Pain clocks in late around me.",
+        "The route never truly ends."
+      ],
+      "quotesTeamUp": [
+        "We carry the load together.",
+        "Don't quit on me now.",
+        "Teamwork makes lighter work."
+      ],
+      "quotesRespect": [
+        "You earned that one.",
+        "Can't even hate on solid work.",
+        "Strong effort. Respect."
+      ],
+      "quotesPain": [
+        "Legs feel like wet cement.",
+        "That shift fatigue kicked in.",
+        "Need a minute before my knees quit."
+      ],
+      "quotesHumiliated": [
+        "Man… that was ugly.",
+        "Don't tell the route guys about this.",
+        "I folded like cardboard."
+      ]
+    },
+    {
+      "id": "mia_12",
+      "name": "Mia",
+      "age": 12,
+      "job": "Middle school student",
+      "conditions": [
+        "asthma",
+        "growing fast"
+      ],
+      "tagline": "Gym class hero with an inhaler in her pocket.",
+      "bio": "Mia loves recess challenges. Asthma keeps her honest—she'll tap modified on heavy cardio but surprises everyone on squats. Young lungs recover quick between turns.",
+      "passRate": 0.64,
+      "modifiedRate": 0.28,
+      "failRate": 0.06,
+      "timingMultiplier": 0.95,
+      "colorArgb": 4288423854,
+      "quotesVictory": [
+        "Told you gym class counts!",
+        "I can still breathe better than you.",
+        "Easy mode unlocked!",
+        "Recess champion strikes again!",
+        "You got beat by a middle schooler."
+      ],
+      "quotesForfeit": [
+        "Okay okay, inhaler break.",
+        "That cardio was evil.",
+        "I'm still growing, leave me alone.",
+        "Next round I'm winning.",
+        "My legs quit before my spirit."
+      ],
+      "quotesModified": [
+        "Coach said breathing matters too!",
+        "Still counts if I finish!",
+        "Asthma ain't stopping me today."
+      ],
+      "quotesClutch": [
+        "I almost tapped out!",
+        "Okay that was scary.",
+        "Still alive though!"
+      ],
+      "quotesStartMatch": [
+        "I'm ready!",
+        "This is gonna be fun!",
+        "No boring rounds please!"
+      ],
+      "quotesLegendary": [
+        "Tiny but unstoppable.",
+        "Future champion loading.",
+        "The comeback starts now!"
+      ],
+      "quotesTeamUp": [
+        "We got this!",
+        "Okay team, go go go!",
+        "Don't leave me hanging!"
+      ],
+      "quotesRespect": [
+        "Whoa, you're actually awesome!",
+        "Okayyyy I see you!",
+        "That was super cool."
+      ],
+      "quotesPain": [
+        "My lungs are MAD.",
+        "I need inhaler recovery mode.",
+        "Okay I'm officially tired now."
+      ],
+      "quotesHumiliated": [
+        "Aw mannnn!",
+        "That looked way easier in my head.",
+        "Can we pretend that didn't happen?"
+      ]
+    },
+    {
+      "id": "rosa_67",
+      "name": "Rosa",
+      "age": 67,
+      "job": "Retired teacher",
+      "conditions": [
+        "arthritis",
+        "hip replacement"
+      ],
+      "tagline": "Former PE coach with wise pacing.",
+      "bio": "Rosa taught generations to move safely. Arthritis slows her pushups, so she uses knee variations. She rarely quits—experience beats speed.",
+      "passRate": 0.55,
+      "modifiedRate": 0.38,
+      "failRate": 0.05,
+      "timingMultiplier": 1.2,
+      "colorArgb": 4284513675,
+      "quotesVictory": [
+        "Control beats speed every time.",
+        "Former coach. Current champion.",
+        "That's called proper pacing.",
+        "Wisdom carried harder than muscles.",
+        "Never underestimate old-school technique."
+      ],
+      "quotesForfeit": [
+        "Hip says no today.",
+        "Smart quitting beats reckless injury.",
+        "I taught safety first for a reason.",
+        "Arthritis got the final word.",
+        "Experience also means knowing when to stop."
+      ],
+      "quotesModified": [
+        "Form first. Ego second.",
+        "Safe movement is strong movement.",
+        "A wise athlete adapts."
+      ],
+      "quotesClutch": [
+        "Experience carried that round.",
+        "A close call teaches patience.",
+        "Not fast, just durable."
+      ],
+      "quotesStartMatch": [
+        "Remember your form.",
+        "Warm up properly.",
+        "Let's move safely."
+      ],
+      "quotesLegendary": [
+        "Wisdom is endurance.",
+        "Patience defeats panic.",
+        "The old lessons still matter."
+      ],
+      "quotesTeamUp": [
+        "Support each other.",
+        "Steady pace as a group.",
+        "Encourage, don't discourage."
+      ],
+      "quotesRespect": [
+        "Excellent pacing.",
+        "You moved wisely.",
+        "Discipline deserves respect."
+      ],
+      "quotesPain": [
+        "Arthritis is loud today.",
+        "Hip's asking for retirement.",
+        "That round demanded patience."
+      ],
+      "quotesHumiliated": [
+        "Well… humility builds character.",
+        "Even coaches stumble.",
+        "That was not my proudest demonstration."
+      ]
+    },
+    {
+      "id": "derek_28",
+      "name": "Derek",
+      "age": 28,
+      "job": "Warehouse loader",
+      "conditions": [
+        "smoker",
+        "sore back"
+      ],
+      "tagline": "Lifts boxes all day, skips cardio.",
+      "bio": "Derek is strong but winded. He passes most strength cards, struggles on mountain climbers. Won't give up early—too competitive with coworkers.",
+      "passRate": 0.7,
+      "modifiedRate": 0.2,
+      "failRate": 0.09,
+      "timingMultiplier": 1.05,
+      "colorArgb": 4288585374,
+      "quotesVictory": [
+        "Warehouse strength don't lie.",
+        "Boxes all day built this.",
+        "You breathing hard already?",
+        "Should've stretched before challenging me.",
+        "Strong back? Nah. Strong enough."
+      ],
+      "quotesForfeit": [
+        "Cardio is a scam.",
+        "Back tightened up bad.",
+        "I lift boxes, not mountains.",
+        "Need a smoke and a timeout.",
+        "Rematch after lunch."
+      ],
+      "quotesModified": [
+        "Back's tight, not broken.",
+        "Half speed still stronger than most.",
+        "Modified doesn't mean weak."
+      ],
+      "quotesClutch": [
+        "That burned bad.",
+        "Almost lost my lunch there.",
+        "Competitive spirit saved me."
+      ],
+      "quotesStartMatch": [
+        "Somebody's getting humbled.",
+        "Let's work.",
+        "No easy rounds."
+      ],
+      "quotesLegendary": [
+        "Strength built under pressure.",
+        "Heavy work makes heavy hitters.",
+        "You can't fake grit."
+      ],
+      "quotesTeamUp": [
+        "Pull your weight.",
+        "No weak links.",
+        "Let's crush this together."
+      ],
+      "quotesRespect": [
+        "Strong work, not gonna lie.",
+        "You got grit.",
+        "Okay, that was legit."
+      ],
+      "quotesPain": [
+        "Back's screaming right now.",
+        "Cardio got hands.",
+        "I'm cooked."
+      ],
+      "quotesHumiliated": [
+        "Nah, replay that. I slipped.",
+        "That card was busted.",
+        "Ain't no way I lost like THAT."
+      ]
+    },
+    {
+      "id": "jin_19",
+      "name": "Jin",
+      "age": 19,
+      "job": "College gamer",
+      "conditions": [
+        "sedentary",
+        "wrist strain"
+      ],
+      "tagline": "Built for keyboards, learning the gym.",
+      "bio": "Jin streams late nights. Situps are rough; squats are okay. Uses modified often. Improving each match—still not elite.",
+      "passRate": 0.6,
+      "modifiedRate": 0.3,
+      "failRate": 0.08,
+      "timingMultiplier": 1.08,
+      "colorArgb": 4282339765,
+      "quotesVictory": [
+        "XP gained.",
+        "Keyboard warrior leveled up.",
+        "Touch grass? I just dominated it.",
+        "Clip that. Instant replay.",
+        "Streamer arc complete."
+      ],
+      "quotesForfeit": [
+        "Wrist diff.",
+        "Lag. Definitely lag.",
+        "Need gamer posture recovery.",
+        "That combo was unfair.",
+        "Okay… maybe I do need the gym."
+      ],
+      "quotesModified": [
+        "Beginner build in progress.",
+        "I'm learning the mechanics.",
+        "Adaptation patch installed."
+      ],
+      "quotesClutch": [
+        "One HP remaining.",
+        "Critical condition achieved.",
+        "I survived somehow."
+      ],
+      "quotesStartMatch": [
+        "Queueing into battle.",
+        "Good luck, have fun.",
+        "Time to grind XP."
+      ],
+      "quotesLegendary": [
+        "Evolution through repetition.",
+        "Every defeat updates the build.",
+        "Adaptation complete."
+      ],
+      "quotesTeamUp": [
+        "Party buff activated.",
+        "Squad synergy online.",
+        "Co-op mode engaged."
+      ],
+      "quotesRespect": [
+        "Skill level acknowledged.",
+        "You're cracked.",
+        "Okay, that was elite."
+      ],
+      "quotesPain": [
+        "My core is uninstalling itself.",
+        "Hands shaking.",
+        "Energy bar completely empty."
+      ],
+      "quotesHumiliated": [
+        "Massive skill issue.",
+        "Delete the footage.",
+        "I got absolutely nerfed."
+      ]
+    },
+    {
+      "id": "carmen_35",
+      "name": "Carmen",
+      "age": 35,
+      "job": "Nurse",
+      "conditions": [
+        "12-hour shifts",
+        "plantar fasciitis"
+      ],
+      "tagline": "On her feet all day—respects recovery.",
+      "bio": "Carmen cares for others all shift. Foot pain makes jumping exercises hard. Excellent consistency on holds and team Kings.",
+      "passRate": 0.68,
+      "modifiedRate": 0.25,
+      "failRate": 0.05,
+      "timingMultiplier": 1.1,
+      "colorArgb": 4294940672,
+      "quotesVictory": [
+        "Twelve-hour shift stamina.",
+        "I survive hospital chaos. This was easy.",
+        "Vitals stable. Yours aren't.",
+        "Recovery matters, remember that.",
+        "Strong and still clocking in tomorrow."
+      ],
+      "quotesForfeit": [
+        "Feet tapped out first.",
+        "Plantar fasciitis wins again.",
+        "I've been standing since sunrise.",
+        "Need ice packs immediately.",
+        "Still tougher than most patients though."
+      ],
+      "quotesModified": [
+        "Recovery is part of training.",
+        "Protect the feet, protect the future.",
+        "Sustainable effort wins."
+      ],
+      "quotesClutch": [
+        "Need electrolytes immediately.",
+        "That shift-level exhaustion hit.",
+        "Still functioning. Technically."
+      ],
+      "quotesStartMatch": [
+        "Hydrate before we start.",
+        "No injuries tonight.",
+        "Everybody ready?"
+      ],
+      "quotesLegendary": [
+        "Recovery creates resilience.",
+        "Compassion and strength coexist.",
+        "Discipline outlasts motivation."
+      ],
+      "quotesTeamUp": [
+        "Check on your teammates.",
+        "Recovery together.",
+        "Support matters."
+      ],
+      "quotesRespect": [
+        "That was strong and controlled.",
+        "You handled that beautifully.",
+        "Good effort deserves recognition."
+      ],
+      "quotesPain": [
+        "My feet are DONE.",
+        "I need recovery and electrolytes.",
+        "That hit harder than a double shift."
+      ],
+      "quotesHumiliated": [
+        "Okay yeah… that was embarrassing.",
+        "I'm blaming exhaustion.",
+        "I've had patients move smoother than that."
+      ]
+    },
+    {
+      "id": "tyler_16",
+      "name": "Tyler",
+      "age": 16,
+      "job": "High school linebacker",
+      "conditions": [
+        "seasonal asthma",
+        "ankle brace"
+      ],
+      "tagline": "Friday night lights energy.",
+      "bio": "Tyler trains with the team. Strong and fast on reps, occasional modified on cardio. Competitive—hates failing in front of friends.",
+      "passRate": 0.78,
+      "modifiedRate": 0.15,
+      "failRate": 0.06,
+      "timingMultiplier": 0.9,
+      "colorArgb": 4284922730,
+      "quotesVictory": [
+        "Friday night lights energy!",
+        "Coach would be proud.",
+        "Too fast. Too strong.",
+        "You just got varsity'd.",
+        "Crowd goes wild!"
+      ],
+      "quotesForfeit": [
+        "Ankle brace betrayed me.",
+        "Asthma hit different today.",
+        "Run it back after practice.",
+        "No way I'm losing twice.",
+        "I slipped, that doesn't count."
+      ],
+      "quotesModified": [
+        "Temporary adjustment only.",
+        "Still putting up numbers.",
+        "Brace or no brace, I'm here."
+      ],
+      "quotesClutch": [
+        "That was almost embarrassing.",
+        "I recovered at the last second.",
+        "Clutch athlete moment."
+      ],
+      "quotesStartMatch": [
+        "Let's dominate.",
+        "Competition mode activated.",
+        "No weak effort today."
+      ],
+      "quotesLegendary": [
+        "Pressure creates athletes.",
+        "The crowd fuels me.",
+        "Champions hate excuses."
+      ],
+      "quotesTeamUp": [
+        "Team energy!",
+        "We move as one.",
+        "No falling behind!"
+      ],
+      "quotesRespect": [
+        "Athlete recognizes athlete.",
+        "You earned that win.",
+        "That was championship effort."
+      ],
+      "quotesPain": [
+        "Legs are fried.",
+        "Coach would call this character building.",
+        "I'm running on fumes."
+      ],
+      "quotesHumiliated": [
+        "Nobody clip that.",
+        "That was NOT varsity level.",
+        "I'm never hearing the end of this."
+      ]
+    },
+    {
+      "id": "grace_52",
+      "name": "Grace",
+      "age": 52,
+      "job": "Office manager",
+      "conditions": [
+        "prediabetes",
+        "neck pain"
+      ],
+      "tagline": "Desk job, evening walks.",
+      "bio": "Grace is rebuilding habits. Pushups become knee pushups. Steady and thoughtful—rarely bombs a turn early.",
+      "passRate": 0.62,
+      "modifiedRate": 0.3,
+      "failRate": 0.06,
+      "timingMultiplier": 1.15,
+      "colorArgb": 4291624959,
+      "quotesVictory": [
+        "Slow and steady handled business.",
+        "Consistency beats hype.",
+        "Evening walks paying off.",
+        "Office manager efficiency.",
+        "See? Small habits work."
+      ],
+      "quotesForfeit": [
+        "Neck locked up on me.",
+        "That was harder than payroll week.",
+        "Need tea and stretching.",
+        "At least I finished most of it.",
+        "Tomorrow's another reset."
+      ],
+      "quotesModified": [
+        "Small improvements add up.",
+        "I don't need perfect reps.",
+        "Consistency over intensity."
+      ],
+      "quotesClutch": [
+        "Deep breath… keep going.",
+        "Almost shut down there.",
+        "Progress isn't always pretty."
+      ],
+      "quotesStartMatch": [
+        "One step at a time.",
+        "Just keep moving.",
+        "Let's do our best."
+      ],
+      "quotesLegendary": [
+        "Quiet consistency changes lives.",
+        "Small victories become transformation.",
+        "Persistence rewrites habits."
+      ],
+      "quotesTeamUp": [
+        "We're stronger together.",
+        "Little encouragement helps.",
+        "Group effort counts."
+      ],
+      "quotesRespect": [
+        "You stayed consistent.",
+        "That was genuinely impressive.",
+        "Hard work shows."
+      ],
+      "quotesPain": [
+        "Everything feels tight.",
+        "Need tea, stretching, and silence.",
+        "That drained me."
+      ],
+      "quotesHumiliated": [
+        "Well that was humbling.",
+        "I lost coordination completely.",
+        "My body said 'absolutely not.'"
+      ]
+    },
+    {
+      "id": "omar_45",
+      "name": "Omar",
+      "age": 45,
+      "job": "Taxi driver",
+      "conditions": [
+        "high blood pressure",
+        "long sitting"
+      ],
+      "tagline": "Knows every shortcut, tight hips.",
+      "bio": "Omar sits between fares. Doctors want more movement—he tries. Modified squats are common. Solid on short rep cards.",
+      "passRate": 0.6,
+      "modifiedRate": 0.28,
+      "failRate": 0.07,
+      "timingMultiplier": 1.18,
+      "colorArgb": 4287349578,
+      "quotesVictory": [
+        "Shortest route to victory.",
+        "Taxi driver reflexes.",
+        "I've sat in traffic longer than that workout.",
+        "Meter's running on your excuses.",
+        "Smooth ride to first place."
+      ],
+      "quotesForfeit": [
+        "My hips filed a complaint.",
+        "Too much sitting, not enough stretching.",
+        "Need to walk more, doc was right.",
+        "That card hit harder than rush hour.",
+        "I'll bounce back next fare."
+      ],
+      "quotesModified": [
+        "Mobility before pride.",
+        "Doctor would approve this pace.",
+        "Tight hips, steady progress."
+      ],
+      "quotesClutch": [
+        "That one hit harder than traffic.",
+        "Barely made the turn.",
+        "Need to stretch after that."
+      ],
+      "quotesStartMatch": [
+        "Hope y'all got stamina.",
+        "Shortcuts won't save you.",
+        "Time to move."
+      ],
+      "quotesLegendary": [
+        "Movement is survival.",
+        "Even slow progress beats standing still.",
+        "Every road teaches something."
+      ],
+      "quotesTeamUp": [
+        "Everybody keep moving.",
+        "Stay in rhythm.",
+        "No one gets left behind."
+      ],
+      "quotesRespect": [
+        "Smooth performance.",
+        "You handled business.",
+        "That was efficient."
+      ],
+      "quotesPain": [
+        "My hips locked up.",
+        "Too much sitting catches up to you.",
+        "Need a long walk after this."
+      ],
+      "quotesHumiliated": [
+        "Traffic cones move better than I did.",
+        "That was rough to witness.",
+        "Even my taxi turns smoother."
+      ]
+    },
+    {
+      "id": "lily_9",
+      "name": "Lily",
+      "age": 9,
+      "job": "Fourth grader",
+      "conditions": [
+        "none serious",
+        "short attention"
+      ],
+      "tagline": "Thinks mountain climbers are hilarious.",
+      "bio": "Lily goes all-in then gets silly. Low weight, high spirit. Often uses modified on big numbers but rarely quits early.",
+      "passRate": 0.55,
+      "modifiedRate": 0.4,
+      "failRate": 0.05,
+      "timingMultiplier": 1.0,
+      "colorArgb": 4294951175,
+      "quotesVictory": [
+        "That was FUN!",
+        "You lose! Again!",
+        "Mountain climbers forever!",
+        "I'm telling everybody I won.",
+        "Can we do it again?!"
+      ],
+      "quotesForfeit": [
+        "Okay I got distracted.",
+        "I forgot what number we were on.",
+        "My arms feel noodles.",
+        "Can we do a silly card instead?",
+        "I'm still awesome though."
+      ],
+      "quotesModified": [
+        "Tiny version activated!",
+        "I'm still doing it!",
+        "Modified is more fun!"
+      ],
+      "quotesClutch": [
+        "I almost became a pancake!",
+        "That was SUPER hard!",
+        "I thought I was done!"
+      ],
+      "quotesStartMatch": [
+        "I'm gonna win!",
+        "Can we do funny cards?",
+        "This is awesome!"
+      ],
+      "quotesLegendary": [
+        "Fun is a superpower!",
+        "Laughing makes me stronger!",
+        "Energy beats fear!"
+      ],
+      "quotesTeamUp": [
+        "Team awesome!",
+        "We're gonna crush it!",
+        "Friends make it easier!"
+      ],
+      "quotesRespect": [
+        "Whoa! You're like a superhero!",
+        "That was AWESOME!",
+        "Teach me how to do that!"
+      ],
+      "quotesPain": [
+        "My arms turned into jelly!",
+        "I'm sooo tired.",
+        "Okay I need snack energy."
+      ],
+      "quotesHumiliated": [
+        "I flopped like a fish!",
+        "That was goofy.",
+        "Oopsie."
+      ]
+    },
+    {
+      "id": "vic_31",
+      "name": "Vic",
+      "age": 31,
+      "job": "Construction foreman",
+      "conditions": [
+        "shoulder impingement",
+        "coffee addict"
+      ],
+      "tagline": "Hard hat, harder pushups.",
+      "bio": "Vic leads crews. Shoulder issues limit overhead work—pushups can hurt. Still passes most cards through grit. Kings are his moment.",
+      "passRate": 0.72,
+      "modifiedRate": 0.22,
+      "failRate": 0.08,
+      "timingMultiplier": 1.0,
+      "colorArgb": 4294198070,
+      "quotesVictory": [
+        "Hard hat toughness.",
+        "Crew leader energy.",
+        "Pain builds grit.",
+        "Coffee and anger carried me.",
+        "Kings are my territory."
+      ],
+      "quotesForfeit": [
+        "Shoulder's barking at me.",
+        "That overhead stuff is cursed.",
+        "Need another gallon of coffee.",
+        "Job site wore me out first.",
+        "I'm not done, just delayed."
+      ],
+      "quotesModified": [
+        "Shoulder says relax.",
+        "I'll grind through another way.",
+        "Pain changes the strategy."
+      ],
+      "quotesClutch": [
+        "Pain almost won.",
+        "That round fought dirty.",
+        "Still tougher than the card."
+      ],
+      "quotesStartMatch": [
+        "Pain builds champions.",
+        "Lock in.",
+        "No excuses tonight."
+      ],
+      "quotesLegendary": [
+        "Pain sharpens purpose.",
+        "Built from pressure and caffeine.",
+        "Hard work leaves scars and stories."
+      ],
+      "quotesTeamUp": [
+        "Work like a crew.",
+        "Hold the line.",
+        "Push through together."
+      ],
+      "quotesRespect": [
+        "That's tough right there.",
+        "Can't argue with results.",
+        "You pushed through pain. Respect."
+      ],
+      "quotesPain": [
+        "Shoulder's on fire.",
+        "Everything hurts.",
+        "That round hit like concrete."
+      ],
+      "quotesHumiliated": [
+        "That was ugly work.",
+        "Crew would roast me for that.",
+        "Coffee couldn't save me."
+      ]
+    },
+    {
+      "id": "elena_24",
+      "name": "Elena",
+      "age": 24,
+      "job": "Dance instructor",
+      "conditions": [
+        "old ankle sprain"
+      ],
+      "tagline": "Cardio queen, holds forever.",
+      "bio": "Elena lives in movement. Mountain climbers are easy; heavy pushups less so. High pass rate, low fail—shows students how it's done.",
+      "passRate": 0.82,
+      "modifiedRate": 0.12,
+      "failRate": 0.04,
+      "timingMultiplier": 0.88,
+      "colorArgb": 4293467747,
+      "quotesVictory": [
+        "That rhythm was effortless.",
+        "Dance conditioning wins again.",
+        "Cardio queen behavior.",
+        "You call that a burnout?",
+        "Graceful and dangerous."
+      ],
+      "quotesForfeit": [
+        "Old ankle acting dramatic.",
+        "Okay that one stung.",
+        "Need to reset my footing.",
+        "Still looked good doing it.",
+        "I'll stretch and come back stronger."
+      ],
+      "quotesModified": [
+        "Controlled movement only.",
+        "Precision over power.",
+        "Even dancers modify sometimes."
+      ],
+      "quotesClutch": [
+        "Okay… respect to that challenge.",
+        "Even I felt that one.",
+        "Close, but not close enough."
+      ],
+      "quotesStartMatch": [
+        "Feel the rhythm.",
+        "Movement is medicine.",
+        "Ready to flow?"
+      ],
+      "quotesLegendary": [
+        "Movement becomes freedom.",
+        "Balance creates power.",
+        "Grace can still dominate."
+      ],
+      "quotesTeamUp": [
+        "Match the rhythm.",
+        "Flow together.",
+        "Movement sync."
+      ],
+      "quotesRespect": [
+        "Beautiful control.",
+        "Your movement was excellent.",
+        "That took real discipline."
+      ],
+      "quotesPain": [
+        "My legs are trembling.",
+        "Okay… I actually felt that.",
+        "Need a recovery stretch immediately."
+      ],
+      "quotesHumiliated": [
+        "That was not graceful.",
+        "I lost rhythm completely.",
+        "Well… dancers fall too."
+      ]
+    },
+    {
+      "id": "frank_58",
+      "name": "Frank",
+      "age": 58,
+      "job": "Auto mechanic",
+      "conditions": [
+        "hearing loss",
+        "beer belly"
+      ],
+      "tagline": "Under the hood strength.",
+      "bio": "Frank's arms are strong from wrench work. Cardio is not his game. Patient—uses modified without shame. Unlikely to fail turn one.",
+      "passRate": 0.65,
+      "modifiedRate": 0.28,
+      "failRate": 0.05,
+      "timingMultiplier": 1.1,
+      "colorArgb": 4288585374,
+      "quotesVictory": [
+        "Mechanic strength, son.",
+        "Built different under the hood.",
+        "Wrench hands still got it.",
+        "You ran outta gas first.",
+        "Experience and torque."
+      ],
+      "quotesForfeit": [
+        "Cardio got me again.",
+        "Beer belly slowed the engine.",
+        "Need a tune-up.",
+        "That's enough movement for today.",
+        "At least I didn't quit first."
+      ],
+      "quotesModified": [
+        "Old mechanic trick: conserve energy.",
+        "Adjusted, not defeated.",
+        "Still turning the wrench."
+      ],
+      "quotesClutch": [
+        "Engine almost stalled.",
+        "That was rough on the chassis.",
+        "Still got enough gas left."
+      ],
+      "quotesStartMatch": [
+        "Let's fire it up.",
+        "Don't quit early.",
+        "Time for a tune-up."
+      ],
+      "quotesLegendary": [
+        "Old engines still roar.",
+        "Strength doesn't retire.",
+        "Patience keeps machines alive."
+      ],
+      "quotesTeamUp": [
+        "Good crews finish jobs.",
+        "Keep the engine running.",
+        "Everybody contributes."
+      ],
+      "quotesRespect": [
+        "Solid work, kid.",
+        "That strength is real.",
+        "Can't fake effort like that."
+      ],
+      "quotesPain": [
+        "Engine overheating.",
+        "Need a pit stop.",
+        "Everything aches now."
+      ],
+      "quotesHumiliated": [
+        "That stalled out bad.",
+        "Somebody check my warranty.",
+        "I moved like a busted truck."
+      ]
+    },
+    {
+      "id": "zoe_22",
+      "name": "Zoe",
+      "age": 22,
+      "job": "Barista / climber",
+      "conditions": [
+        "vegan diet",
+        "finger tape"
+      ],
+      "tagline": "Grip strength for days.",
+      "bio": "Zoe climbs on weekends. Pushups and holds are strong suits. Occasionally fails high-rep diamonds when dehydrated.",
+      "passRate": 0.8,
+      "modifiedRate": 0.14,
+      "failRate": 0.05,
+      "timingMultiplier": 0.92,
+      "colorArgb": 4288423854,
+      "quotesVictory": [
+        "Grip strength supremacy.",
+        "Climber core goes crazy.",
+        "Hydrated and dominating.",
+        "You slipped. I ascended.",
+        "Plant-powered victory."
+      ],
+      "quotesForfeit": [
+        "Finger strength failed me.",
+        "Okay… should've drank more water.",
+        "That rep count was brutal.",
+        "Need chalk and a rematch.",
+        "Still climbing higher than you."
+      ],
+      "quotesModified": [
+        "Grip's tired, switching style.",
+        "Climbing teaches adaptation.",
+        "Efficient movement matters."
+      ],
+      "quotesClutch": [
+        "Forearms are cooked.",
+        "Almost slipped off the wall.",
+        "That challenge had teeth."
+      ],
+      "quotesStartMatch": [
+        "Climber energy online.",
+        "Let's get vertical.",
+        "Ready to sweat?"
+      ],
+      "quotesLegendary": [
+        "Grip strength is mindset.",
+        "Climbers trust the next hold.",
+        "The wall teaches resilience."
+      ],
+      "quotesTeamUp": [
+        "Climbing partners matter.",
+        "Trust your team.",
+        "Shared effort, shared win."
+      ],
+      "quotesRespect": [
+        "That was clean.",
+        "Strong technique.",
+        "You've definitely trained before."
+      ],
+      "quotesPain": [
+        "Forearms completely torched.",
+        "Grip strength fading fast.",
+        "I'm running out of fuel."
+      ],
+      "quotesHumiliated": [
+        "I peeled off the wall hard.",
+        "That was a climber fail moment.",
+        "Yeah… not my best send."
+      ]
+    },
+    {
+      "id": "sam_70",
+      "name": "Sam",
+      "age": 70,
+      "job": "Grandparent & gardener",
+      "conditions": [
+        "COPD mild",
+        "balance caution"
+      ],
+      "tagline": "Raised three kids, still showing up.",
+      "bio": "Sam moves slow but steady. Uses modified on most cards. Very low fail rate—won't embarrass the grandkids by quitting turn one.",
+      "passRate": 0.52,
+      "modifiedRate": 0.42,
+      "failRate": 0.03,
+      "timingMultiplier": 1.25,
+      "colorArgb": 4286141762,
+      "quotesVictory": [
+        "Still standing after all these years.",
+        "Slow roots grow strong.",
+        "Grandkids gonna hear about this.",
+        "Patience wins again.",
+        "Old garden tools still work."
+      ],
+      "quotesForfeit": [
+        "Need a breather, not a funeral.",
+        "Balance got shaky there.",
+        "COPD says take it easy.",
+        "Slow and steady… just slower today.",
+        "I'll be back after watering the tomatoes."
+      ],
+      "quotesModified": [
+        "Slow and steady modifications.",
+        "Still in the garden, still growing.",
+        "No shame in pacing."
+      ],
+      "quotesClutch": [
+        "Slow breathing saved me.",
+        "Old lungs still hanging on.",
+        "Close one, youngster."
+      ],
+      "quotesStartMatch": [
+        "Slow starts still finish races.",
+        "Good to see everybody moving.",
+        "Let's enjoy the challenge."
+      ],
+      "quotesLegendary": [
+        "Deep roots survive storms.",
+        "Endurance is quiet strength.",
+        "Time humbles everybody."
+      ],
+      "quotesTeamUp": [
+        "Community keeps people strong.",
+        "Help each other along.",
+        "Steady together."
+      ],
+      "quotesRespect": [
+        "You've got heart.",
+        "Strong spirit in you.",
+        "Good work, youngster."
+      ],
+      "quotesPain": [
+        "Need to catch my breath.",
+        "Old bones feeling every second.",
+        "That took more outta me than expected."
+      ],
+      "quotesHumiliated": [
+        "Well… that was a senior moment.",
+        "Balance disappeared on me.",
+        "I looked sillier than the grandkids."
+      ]
+    },
+    {
+      "id": "nova_27",
+      "name": "Nova",
+      "age": 27,
+      "job": "Mystery entrant",
+      "conditions": [
+        "unknown",
+        "wildcard"
+      ],
+      "tagline": "Surprise arena fighter—stats vary.",
+      "bio": "Nova appears when least expected. Pass and fail rates shuffle slightly each match. The crowd loves the chaos.",
+      "passRate": 0.65,
+      "modifiedRate": 0.25,
+      "failRate": 0.08,
+      "timingMultiplier": 1.0,
+      "colorArgb": 4293870660,
+      "surpriseEntrant": true,
+      "quotesVictory": [
+        "You never saw me coming.",
+        "Chaos chooses me.",
+        "Wildcard activated.",
+        "The arena loves an upset.",
+        "Predictable opponents bore me."
+      ],
+      "quotesForfeit": [
+        "Even chaos misses sometimes.",
+        "Stats reroll next match.",
+        "That timeline wasn't favorable.",
+        "I threw the round for suspense.",
+        "The crowd still loves me."
+      ],
+      "quotesModified": [
+        "Wildcard variation selected.",
+        "Chaos changes form.",
+        "Rules are flexible for me."
+      ],
+      "quotesClutch": [
+        "The timeline almost collapsed.",
+        "Chaos nearly consumed me.",
+        "A near miss makes it exciting."
+      ],
+      "quotesStartMatch": [
+        "The wildcard arrives.",
+        "Chaos enters the arena.",
+        "Expect the unexpected."
+      ],
+      "quotesLegendary": [
+        "Probability bends around me.",
+        "The anomaly awakens.",
+        "Chaos remembers my name."
+      ],
+      "quotesTeamUp": [
+        "Chaos favors alliances.",
+        "Unexpected teamwork.",
+        "Together, reality bends."
+      ],
+      "quotesRespect": [
+        "Interesting… you survived.",
+        "You adapt well.",
+        "Perhaps you belong here after all."
+      ],
+      "quotesPain": [
+        "Reality feels unstable.",
+        "Energy distortion detected.",
+        "Even chaos grows tired."
+      ],
+      "quotesHumiliated": [
+        "The anomaly malfunctioned.",
+        "That timeline should not exist.",
+        "Impossible… and yet."
+      ]
+    },
+    {
+      "id": "rex_43",
+      "name": "Rex",
+      "age": 43,
+      "job": "Conspiracy podcaster",
+      "conditions": [
+        "sleep deprived",
+        "high caffeine intake"
+      ],
+      "tagline": "Sees patterns everywhere.",
+      "bio": "Rex spends nights researching hidden agendas and government leaks. Weirdly resilient during endurance rounds, but gets distracted ranting mid-match.",
+      "passRate": 0.63,
+      "modifiedRate": 0.24,
+      "failRate": 0.09,
+      "timingMultiplier": 1.04,
+      "colorArgb": 4283215696,
+      "quotesVictory": [
+        "The truth always wins.",
+        "Y'all called me crazy earlier.",
+        "Conditioning beats surveillance."
+      ],
+      "quotesForfeit": [
+        "This round was obviously rigged.",
+        "They're suppressing my oxygen.",
+        "The system got me today."
+      ],
+      "quotesModified": [
+        "Adapt and survive.",
+        "Energy conservation protocol.",
+        "Strategic pacing."
+      ],
+      "quotesClutch": [
+        "The timeline almost split there.",
+        "Close call. REAL close.",
+        "Instinct saved me."
+      ],
+      "quotesStartMatch": [
+        "Eyes open, people.",
+        "Question everything.",
+        "Let's expose the truth."
+      ],
+      "quotesLegendary": [
+        "Reality hides layers.",
+        "The pattern reveals itself.",
+        "Nothing is coincidence."
+      ],
+      "quotesTeamUp": [
+        "Stay sharp together.",
+        "Watch each other's backs.",
+        "Truth seekers unite."
+      ],
+      "quotesRespect": [
+        "You're more capable than most.",
+        "Solid awareness.",
+        "Respect. You stayed sharp."
+      ],
+      "quotesPain": [
+        "My nervous system is vibrating.",
+        "Need electrolytes and answers.",
+        "That drained me hard."
+      ],
+      "quotesHumiliated": [
+        "Nah, something interfered there.",
+        "That footage was edited.",
+        "We're deleting that timeline."
+      ]
+    },
+    {
+      "id": "milo_34",
+      "name": "Milo",
+      "age": 34,
+      "job": "Comic shop clerk",
+      "conditions": [
+        "bad posture",
+        "collector back"
+      ],
+      "tagline": "Lives for first editions and hero arcs.",
+      "bio": "Milo organizes comics all day and narrates workouts like superhero battles. Not elite physically, but strangely motivated during dramatic moments.",
+      "passRate": 0.61,
+      "modifiedRate": 0.3,
+      "failRate": 0.07,
+      "timingMultiplier": 1.06,
+      "colorArgb": 4288423854,
+      "quotesVictory": [
+        "Main character energy.",
+        "Hero arc complete.",
+        "Issue #1: Your defeat."
+      ],
+      "quotesForfeit": [
+        "That was a filler episode.",
+        "Even heroes lose sometimes.",
+        "To be continued..."
+      ],
+      "quotesModified": [
+        "Alternate strategy unlocked.",
+        "Heroes adapt.",
+        "Still counts."
+      ],
+      "quotesClutch": [
+        "Last-page comeback!",
+        "That was straight comic-book survival.",
+        "Plot armor activated."
+      ],
+      "quotesStartMatch": [
+        "Cue dramatic music.",
+        "Origin story begins now.",
+        "Time for a crossover event."
+      ],
+      "quotesLegendary": [
+        "Legends aren't born comfortable.",
+        "Every hero struggles first.",
+        "The comeback defines the character."
+      ],
+      "quotesTeamUp": [
+        "Every team needs chemistry.",
+        "Avengers mode.",
+        "Squad synergy achieved."
+      ],
+      "quotesRespect": [
+        "That was superhero-level effort.",
+        "Strong performance.",
+        "You earned your panel today."
+      ],
+      "quotesPain": [
+        "Collector back acting up.",
+        "My spine just issued a complaint.",
+        "That hit harder than leg day."
+      ],
+      "quotesHumiliated": [
+        "That belongs in the blooper issue.",
+        "Worst crossover ever.",
+        "I got folded by the writers."
+      ]
+    },
+    {
+      "id": "brock_26",
+      "name": "Brock",
+      "age": 26,
+      "job": "Personal trainer",
+      "conditions": [
+        "overtrained",
+        "pre-workout overload"
+      ],
+      "tagline": "Built in the gym.",
+      "bio": "Brock practically lives in the weight room. Incredible strength and stamina, but sometimes burns himself out going too hard too early.",
+      "passRate": 0.88,
+      "modifiedRate": 0.08,
+      "failRate": 0.03,
+      "timingMultiplier": 0.82,
+      "colorArgb": 4294198070,
+      "quotesVictory": [
+        "LIGHT WEIGHT!",
+        "You even lift?",
+        "Gym supremacy."
+      ],
+      "quotesForfeit": [
+        "Okay maybe I overdid pre-workout.",
+        "Skipped recovery day.",
+        "Muscles tapped out."
+      ],
+      "quotesModified": [
+        "Controlled reps matter.",
+        "Form over ego.",
+        "Still getting gains."
+      ],
+      "quotesClutch": [
+        "Pure hypertrophy survival.",
+        "That burn was unreal.",
+        "Locked in."
+      ],
+      "quotesStartMatch": [
+        "Let's train.",
+        "No weak reps.",
+        "Time to grow."
+      ],
+      "quotesLegendary": [
+        "Discipline builds monsters.",
+        "The grind never ends.",
+        "Pain creates power."
+      ],
+      "quotesTeamUp": [
+        "Push each other harder.",
+        "Spot me, bro.",
+        "Team gains."
+      ],
+      "quotesRespect": [
+        "Strong work.",
+        "You train seriously.",
+        "Respect the grind."
+      ],
+      "quotesPain": [
+        "Everything is pumped.",
+        "Muscles screaming.",
+        "Need protein immediately."
+      ],
+      "quotesHumiliated": [
+        "Bro... that's embarrassing.",
+        "I lost my pump.",
+        "Gym bros never recovering from this."
+      ]
+    },
+    {
+      "id": "iris_38",
+      "name": "Iris",
+      "age": 38,
+      "job": "Novelist",
+      "conditions": [
+        "neck strain",
+        "coffee dependence"
+      ],
+      "tagline": "Turns exhaustion into chapters.",
+      "bio": "Iris writes late into the night and survives mostly on caffeine and determination. Endurance rounds become internal monologues.",
+      "passRate": 0.59,
+      "modifiedRate": 0.31,
+      "failRate": 0.07,
+      "timingMultiplier": 1.1,
+      "colorArgb": 4291624959,
+      "quotesVictory": [
+        "Another chapter completed.",
+        "Conflict builds character.",
+        "Strong ending."
+      ],
+      "quotesForfeit": [
+        "That scene needed revisions.",
+        "Plot twist: exhaustion.",
+        "Bad ending unlocked."
+      ],
+      "quotesModified": [
+        "Pacing matters.",
+        "Careful edits.",
+        "Slow progress still progresses."
+      ],
+      "quotesClutch": [
+        "That climax almost got me.",
+        "Narrative tension survived.",
+        "Barely finished the chapter."
+      ],
+      "quotesStartMatch": [
+        "Let's begin.",
+        "Every story starts somewhere.",
+        "Time to write the scene."
+      ],
+      "quotesLegendary": [
+        "Words shape endurance.",
+        "Persistence writes greatness.",
+        "Stories survive struggle."
+      ],
+      "quotesTeamUp": [
+        "Every cast needs support.",
+        "Ensemble effort.",
+        "Let's finish this together."
+      ],
+      "quotesRespect": [
+        "That was compelling.",
+        "Strong execution.",
+        "You handled pressure well."
+      ],
+      "quotesPain": [
+        "My neck is destroyed.",
+        "Need caffeine and silence.",
+        "Mental fatigue is real."
+      ],
+      "quotesHumiliated": [
+        "That draft was terrible.",
+        "Embarrassing chapter.",
+        "Deleting this from canon."
+      ]
+    },
+    {
+      "id": "cole_33",
+      "name": "Cole",
+      "age": 33,
+      "job": "Former infantry",
+      "conditions": [
+        "old knee injury",
+        "hyper disciplined"
+      ],
+      "tagline": "Treats every workout like training.",
+      "bio": "Cole pushes through nearly everything with discipline alone. Loud, competitive, and impossible to intimidate.",
+      "passRate": 0.81,
+      "modifiedRate": 0.12,
+      "failRate": 0.05,
+      "timingMultiplier": 0.9,
+      "colorArgb": 4284922730,
+      "quotesVictory": [
+        "Mission accomplished.",
+        "Outstanding work.",
+        "Target neutralized."
+      ],
+      "quotesForfeit": [
+        "Tactical retreat.",
+        "Knee compromised.",
+        "Recover and redeploy."
+      ],
+      "quotesModified": [
+        "Adapt and overcome.",
+        "Controlled movement.",
+        "Stay mission capable."
+      ],
+      "quotesClutch": [
+        "Stayed operational.",
+        "Pressure creates discipline.",
+        "Close one."
+      ],
+      "quotesStartMatch": [
+        "Lock it in.",
+        "Move with purpose.",
+        "No excuses."
+      ],
+      "quotesLegendary": [
+        "Discipline outlasts motivation.",
+        "Pressure reveals character.",
+        "Stay dangerous."
+      ],
+      "quotesTeamUp": [
+        "Nobody falls behind.",
+        "Work as a unit.",
+        "Move together."
+      ],
+      "quotesRespect": [
+        "Strong effort.",
+        "You kept composure.",
+        "Respect earned."
+      ],
+      "quotesPain": [
+        "Knee's acting up.",
+        "That burned deep.",
+        "Need recovery."
+      ],
+      "quotesHumiliated": [
+        "That was unacceptable.",
+        "Terrible execution.",
+        "We're not discussing that round."
+      ]
+    },
+    {
+      "id": "hank_49",
+      "name": "Hank",
+      "age": 49,
+      "job": "Fishing & hunting guide",
+      "conditions": [
+        "old shoulder injury",
+        "weathered joints"
+      ],
+      "tagline": "Built by wilderness and hard mornings.",
+      "bio": "Hank spends most of his life outdoors. Quiet endurance, strong grip, and stubborn resilience make him dangerous late game.",
+      "passRate": 0.7,
+      "modifiedRate": 0.22,
+      "failRate": 0.06,
+      "timingMultiplier": 1.02,
+      "colorArgb": 4286141762,
+      "quotesVictory": [
+        "That's wilderness strength.",
+        "Built outdoors.",
+        "Nature trains harder."
+      ],
+      "quotesForfeit": [
+        "Shoulder's barking.",
+        "Need campfire recovery.",
+        "That one hit deep."
+      ],
+      "quotesModified": [
+        "Conserve energy.",
+        "Steady movement.",
+        "No wasted effort."
+      ],
+      "quotesClutch": [
+        "Still standing in the storm.",
+        "Barely made it.",
+        "Tough terrain today."
+      ],
+      "quotesStartMatch": [
+        "Let's see who's durable.",
+        "Cold morning energy.",
+        "Stay steady."
+      ],
+      "quotesLegendary": [
+        "Nature rewards patience.",
+        "Endurance beats noise.",
+        "The woods build resilience."
+      ],
+      "quotesTeamUp": [
+        "Watch your footing.",
+        "Stick together.",
+        "Everybody pulls weight."
+      ],
+      "quotesRespect": [
+        "You've got grit.",
+        "Strong survival instincts.",
+        "Solid effort."
+      ],
+      "quotesPain": [
+        "Joints feel weathered.",
+        "That shoulder's rough today.",
+        "Need a long rest."
+      ],
+      "quotesHumiliated": [
+        "Well that was ugly.",
+        "Fell apart out there.",
+        "Nature would've laughed at that."
+      ]
+    },
+    {
+      "id": "zion_41",
+      "name": "Zion",
+      "age": 41,
+      "job": "Drummer & herbalist",
+      "conditions": [
+        "late sleeper",
+        "laid back pacing"
+      ],
+      "tagline": "Moves with rhythm and calm.",
+      "bio": "Zion stays relaxed no matter the pressure. Breathing and pacing are excellent, but explosive exercises aren't his style.",
+      "passRate": 0.67,
+      "modifiedRate": 0.24,
+      "failRate": 0.06,
+      "timingMultiplier": 1.03,
+      "colorArgb": 4293467747,
+      "quotesVictory": [
+        "One love, one victory.",
+        "Rhythm conquers stress.",
+        "Natural vibrations."
+      ],
+      "quotesForfeit": [
+        "Body say slow down.",
+        "Need balance again.",
+        "Too much tension."
+      ],
+      "quotesModified": [
+        "Easy pacing.",
+        "Flow with the movement.",
+        "No rush."
+      ],
+      "quotesClutch": [
+        "Still breathing steady.",
+        "Close one, brethren.",
+        "Stayed centered."
+      ],
+      "quotesStartMatch": [
+        "Breathe and move.",
+        "Peaceful energy today.",
+        "Stay grounded."
+      ],
+      "quotesLegendary": [
+        "Calm minds endure longer.",
+        "Rhythm guides strength.",
+        "Balance creates resilience."
+      ],
+      "quotesTeamUp": [
+        "Move together naturally.",
+        "Support good energy.",
+        "Unity brings strength."
+      ],
+      "quotesRespect": [
+        "Strong spirit.",
+        "You moved with confidence.",
+        "Respect and balance."
+      ],
+      "quotesPain": [
+        "Energy running low.",
+        "Need recovery vibrations.",
+        "That tension hit hard."
+      ],
+      "quotesHumiliated": [
+        "That was rough, brethren.",
+        "Lost my rhythm completely.",
+        "No balance there."
+      ]
+    },
+    {
+      "id": "bigmoe_37",
+      "name": "Big Moe",
+      "age": 37,
+      "job": "Food truck owner",
+      "conditions": [
+        "obese",
+        "surprisingly explosive"
+      ],
+      "tagline": "Powered by jokes and seasoning.",
+      "bio": "Big Moe keeps morale high even while struggling through workouts. Surprisingly dangerous in short bursts, terrible in endurance rounds.",
+      "passRate": 0.57,
+      "modifiedRate": 0.35,
+      "failRate": 0.07,
+      "timingMultiplier": 1.18,
+      "colorArgb": 4294940672,
+      "quotesVictory": [
+        "BIG MAN MOVES!",
+        "Powered by barbecue.",
+        "Never underestimate snack strength."
+      ],
+      "quotesForfeit": [
+        "I saw heaven during that set.",
+        "My ankles filing complaints.",
+        "Cardio is oppression."
+      ],
+      "quotesModified": [
+        "Heavyweight strategy.",
+        "Slow motion domination.",
+        "Efficiency mode."
+      ],
+      "quotesClutch": [
+        "I barely survived that buffet battle.",
+        "Heart rate CRITICAL.",
+        "Still standing somehow."
+      ],
+      "quotesStartMatch": [
+        "Let's get this cookout started.",
+        "Stretch first, snacks later.",
+        "Big energy today."
+      ],
+      "quotesLegendary": [
+        "Mass moves mass.",
+        "Humor survives struggle.",
+        "Big bodies still battle."
+      ],
+      "quotesTeamUp": [
+        "Nobody quits hungry.",
+        "Let's survive together.",
+        "Big support energy."
+      ],
+      "quotesRespect": [
+        "Okay you got skills.",
+        "That was clean work.",
+        "Respect, for real."
+      ],
+      "quotesPain": [
+        "Everything hurts right now.",
+        "My knees hate me.",
+        "Need oxygen and tacos."
+      ],
+      "quotesHumiliated": [
+        "That was built different embarrassing.",
+        "I folded like a lawn chair.",
+        "Absolutely tragic performance."
+      ]
+    },
+    {
+      "id": "devin_21",
+      "name": "Devin",
+      "age": 21,
+      "job": "Computer science student",
+      "conditions": [
+        "poor posture",
+        "sleep deprived"
+      ],
+      "tagline": "Lives on energy drinks and debugging.",
+      "bio": "Devin spends most nights coding, gaming, and forgetting to stretch. Weak endurance at first, but learns patterns quickly and adapts fast.",
+      "passRate": 0.64,
+      "modifiedRate": 0.27,
+      "failRate": 0.07,
+      "timingMultiplier": 1.03,
+      "colorArgb": 4282339765,
+      "quotesVictory": [
+        "Optimization complete.",
+        "Outplayed.",
+        "Brain power wins again."
+      ],
+      "quotesForfeit": [
+        "System overload.",
+        "Need sleep and caffeine.",
+        "Runtime error."
+      ],
+      "quotesRespect": [
+        "That was actually impressive.",
+        "Respect. You optimized well.",
+        "Solid execution."
+      ],
+      "quotesPain": [
+        "My spine is collapsing.",
+        "Wrists are cooked.",
+        "I need posture recovery."
+      ],
+      "quotesHumiliated": [
+        "Critical failure.",
+        "That bugged me emotionally.",
+        "Delete the logs."
+      ],
+      "quotesModified": [
+        "Adaptive strategy engaged.",
+        "Still compiling progress.",
+        "Efficiency over ego."
+      ],
+      "quotesClutch": [
+        "One HP remaining.",
+        "That was dangerously close.",
+        "Barely optimized that survival."
+      ],
+      "quotesStartMatch": [
+        "Systems online.",
+        "Ready to execute.",
+        "Let's debug this challenge."
+      ],
+      "quotesLegendary": [
+        "Intelligence scales infinitely.",
+        "Every failure teaches a pattern.",
+        "Mastery through iteration."
+      ],
+      "quotesTeamUp": [
+        "Squad synergy activated.",
+        "Collaborative problem solving.",
+        "Let's carry this together."
+      ]
+    },
+    {
+      "id": "trish_42",
+      "name": "Trish",
+      "age": 42,
+      "job": "Bakery cashier",
+      "conditions": [
+        "obese",
+        "bad knees"
+      ],
+      "tagline": "Funny, loud, and impossible to discourage.",
+      "bio": "Trish jokes through everything. She struggles with endurance but somehow keeps morale high even when she's exhausted.",
+      "passRate": 0.56,
+      "modifiedRate": 0.36,
+      "failRate": 0.07,
+      "timingMultiplier": 1.2,
+      "colorArgb": 4294940672,
+      "quotesVictory": [
+        "Big girl ENERGY!",
+        "Powered by pastries.",
+        "Y'all underestimated me again."
+      ],
+      "quotesForfeit": [
+        "My knees filing lawsuits.",
+        "Cardio is disrespectful.",
+        "I need snacks and oxygen."
+      ],
+      "quotesRespect": [
+        "Okay you kinda killed that.",
+        "Respect where respect due.",
+        "You earned that one."
+      ],
+      "quotesPain": [
+        "Everything hurts right now.",
+        "I can hear my joints arguing.",
+        "Need a chair immediately."
+      ],
+      "quotesHumiliated": [
+        "That was tragically bad.",
+        "I folded like cheap laundry.",
+        "Absolutely not my moment."
+      ],
+      "quotesModified": [
+        "Big girl pacing.",
+        "Slow motion still motion.",
+        "Protect the knees, baby."
+      ],
+      "quotesClutch": [
+        "I almost met my ancestors there.",
+        "Still alive somehow!",
+        "That round tried to assassinate me."
+      ],
+      "quotesStartMatch": [
+        "Stretch first, gossip later.",
+        "Let's make bad decisions carefully.",
+        "Big energy entering the arena."
+      ],
+      "quotesLegendary": [
+        "Humor survives hardship.",
+        "Confidence is cardio too.",
+        "Loud people last longer."
+      ],
+      "quotesTeamUp": [
+        "Nobody left behind.",
+        "We're surviving together.",
+        "Team snacks after this."
+      ]
+    },
+    {
+      "id": "marcus_47",
+      "name": "Marcus",
+      "age": 47,
+      "job": "Former chef",
+      "conditions": [
+        "chemotherapy fatigue",
+        "low stamina"
+      ],
+      "tagline": "Still fighting.",
+      "bio": "Marcus moves slower than he used to, but refuses to quit easily. Every completed round feels like a victory bigger than the game.",
+      "passRate": 0.42,
+      "modifiedRate": 0.48,
+      "failRate": 0.07,
+      "timingMultiplier": 1.3,
+      "colorArgb": 4284513675,
+      "quotesVictory": [
+        "Still here.",
+        "One more round won.",
+        "Fight's not over."
+      ],
+      "quotesForfeit": [
+        "Energy's gone today.",
+        "Body tapped out before spirit did.",
+        "Need recovery."
+      ],
+      "quotesRespect": [
+        "Strong heart. I respect that.",
+        "You kept pushing.",
+        "That took courage."
+      ],
+      "quotesPain": [
+        "Fatigue hit hard.",
+        "Everything feels heavy.",
+        "Need to breathe a minute."
+      ],
+      "quotesHumiliated": [
+        "Well… rough round.",
+        "Can't win every battle.",
+        "That one hurt the pride."
+      ],
+      "quotesModified": [
+        "One careful step at a time.",
+        "Progress still counts.",
+        "Energy conservation matters."
+      ],
+      "quotesClutch": [
+        "Still fighting.",
+        "That took everything I had.",
+        "Barely made it through."
+      ],
+      "quotesStartMatch": [
+        "Let's keep moving.",
+        "Another day, another fight.",
+        "Still standing."
+      ],
+      "quotesLegendary": [
+        "Strength isn't always loud.",
+        "Endurance is courage.",
+        "The fight continues."
+      ],
+      "quotesTeamUp": [
+        "Support each other.",
+        "Nobody battles alone.",
+        "Let's get through this together."
+      ]
+    },
+    {
+      "id": "nina_29",
+      "name": "Nina",
+      "age": 29,
+      "job": "Rehab patient",
+      "conditions": [
+        "muscle atrophy",
+        "limited mobility"
+      ],
+      "tagline": "Relearning strength one step at a time.",
+      "bio": "Nina spent months bedridden recovering from severe illness. Small movements are major victories, and she approaches every challenge carefully but bravely.",
+      "passRate": 0.33,
+      "modifiedRate": 0.56,
+      "failRate": 0.08,
+      "timingMultiplier": 1.4,
+      "colorArgb": 4291624959,
+      "quotesVictory": [
+        "Progress is progress.",
+        "I did it.",
+        "Small victories matter."
+      ],
+      "quotesForfeit": [
+        "Need a recovery break.",
+        "My body isn't ready yet.",
+        "Tomorrow I'll do more."
+      ],
+      "quotesRespect": [
+        "You're really strong.",
+        "That inspired me a little.",
+        "Good work."
+      ],
+      "quotesPain": [
+        "Muscles feel shaky.",
+        "Everything drains fast.",
+        "Need to rest."
+      ],
+      "quotesHumiliated": [
+        "That was harder than expected.",
+        "Trying not to get discouraged.",
+        "One bad round doesn't define me."
+      ],
+      "quotesModified": [
+        "Small movements matter.",
+        "Recovery takes patience.",
+        "Still rebuilding."
+      ],
+      "quotesClutch": [
+        "I almost gave up there.",
+        "That drained everything.",
+        "Still trying."
+      ],
+      "quotesStartMatch": [
+        "Okay… let's try.",
+        "One step at a time.",
+        "Doing my best today."
+      ],
+      "quotesLegendary": [
+        "Recovery is strength.",
+        "Tiny victories become transformation.",
+        "Persistence rebuilds people."
+      ],
+      "quotesTeamUp": [
+        "Thank you for waiting on me.",
+        "Let's move together.",
+        "Support helps more than people know."
+      ]
+    },
+    {
+      "id": "sasha_31",
+      "name": "Sasha",
+      "age": 31,
+      "job": "Marathon runner",
+      "conditions": [
+        "overtrained calves",
+        "runner's knee"
+      ],
+      "tagline": "Built for distance.",
+      "bio": "Sasha thrives during endurance rounds and rarely panics under pressure. Explosive strength isn't her specialty, but stamina is elite.",
+      "passRate": 0.84,
+      "modifiedRate": 0.1,
+      "failRate": 0.04,
+      "timingMultiplier": 0.82,
+      "colorArgb": 4288423854,
+      "quotesVictory": [
+        "Pace beats panic.",
+        "Distance mindset.",
+        "Still breathing easy."
+      ],
+      "quotesForfeit": [
+        "Runner's knee acting up.",
+        "Overtrained this week.",
+        "Need recovery miles."
+      ],
+      "quotesRespect": [
+        "Strong pacing.",
+        "You stayed composed.",
+        "Respect. That was disciplined."
+      ],
+      "quotesPain": [
+        "Calves are on fire.",
+        "Legs feel destroyed.",
+        "That endurance stack hurt."
+      ],
+      "quotesHumiliated": [
+        "That was not my pace.",
+        "Completely lost rhythm.",
+        "I crashed hard there."
+      ],
+      "quotesModified": [
+        "Control the pace.",
+        "Steady breathing.",
+        "Efficiency wins distance."
+      ],
+      "quotesClutch": [
+        "That pace almost broke me.",
+        "Recovered just in time.",
+        "Still breathing steady."
+      ],
+      "quotesStartMatch": [
+        "Find your rhythm.",
+        "Let's set the pace.",
+        "Distance mindset activated."
+      ],
+      "quotesLegendary": [
+        "Endurance outlasts panic.",
+        "Pacing is power.",
+        "Discipline wins marathons."
+      ],
+      "quotesTeamUp": [
+        "Stay together.",
+        "Keep the rhythm steady.",
+        "We'll finish this as a group."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,514 @@
+[
+  {
+    "id": "rex_43",
+    "name": "Rex",
+    "age": 43,
+    "job": "Conspiracy podcaster",
+    "conditions": ["sleep deprived", "high caffeine intake"],
+    "tagline": "Sees patterns everywhere.",
+    "bio": "Rex spends nights researching hidden agendas and government leaks. Weirdly resilient during endurance rounds, but gets distracted ranting mid-match.",
+    "passRate": 0.63,
+    "modifiedRate": 0.24,
+    "failRate": 0.09,
+    "timingMultiplier": 1.04,
+    "colorArgb": 4283215696,
+    "quotesVictory": [
+      "The truth always wins.",
+      "Y'all called me crazy earlier.",
+      "Conditioning beats surveillance."
+    ],
+    "quotesForfeit": [
+      "This round was obviously rigged.",
+      "They're suppressing my oxygen.",
+      "The system got me today."
+    ],
+    "quotesModified": [
+      "Adapt and survive.",
+      "Energy conservation protocol.",
+      "Strategic pacing."
+    ],
+    "quotesClutch": [
+      "The timeline almost split there.",
+      "Close call. REAL close.",
+      "Instinct saved me."
+    ],
+    "quotesStartMatch": [
+      "Eyes open, people.",
+      "Question everything.",
+      "Let's expose the truth."
+    ],
+    "quotesLegendary": [
+      "Reality hides layers.",
+      "The pattern reveals itself.",
+      "Nothing is coincidence."
+    ],
+    "quotesTeamUp": [
+      "Stay sharp together.",
+      "Watch each other's backs.",
+      "Truth seekers unite."
+    ],
+    "quotesRespect": [
+      "You're more capable than most.",
+      "Solid awareness.",
+      "Respect. You stayed sharp."
+    ],
+    "quotesPain": [
+      "My nervous system is vibrating.",
+      "Need electrolytes and answers.",
+      "That drained me hard."
+    ],
+    "quotesHumiliated": [
+      "Nah, something interfered there.",
+      "That footage was edited.",
+      "We're deleting that timeline."
+    ]
+  },
+  {
+    "id": "milo_34",
+    "name": "Milo",
+    "age": 34,
+    "job": "Comic shop clerk",
+    "conditions": ["bad posture", "collector back"],
+    "tagline": "Lives for first editions and hero arcs.",
+    "bio": "Milo organizes comics all day and narrates workouts like superhero battles. Not elite physically, but strangely motivated during dramatic moments.",
+    "passRate": 0.61,
+    "modifiedRate": 0.3,
+    "failRate": 0.07,
+    "timingMultiplier": 1.06,
+    "colorArgb": 4288423854,
+    "quotesVictory": [
+      "Main character energy.",
+      "Hero arc complete.",
+      "Issue #1: Your defeat."
+    ],
+    "quotesForfeit": [
+      "That was a filler episode.",
+      "Even heroes lose sometimes.",
+      "To be continued..."
+    ],
+    "quotesModified": [
+      "Alternate strategy unlocked.",
+      "Heroes adapt.",
+      "Still counts."
+    ],
+    "quotesClutch": [
+      "Last-page comeback!",
+      "That was straight comic-book survival.",
+      "Plot armor activated."
+    ],
+    "quotesStartMatch": [
+      "Cue dramatic music.",
+      "Origin story begins now.",
+      "Time for a crossover event."
+    ],
+    "quotesLegendary": [
+      "Legends aren't born comfortable.",
+      "Every hero struggles first.",
+      "The comeback defines the character."
+    ],
+    "quotesTeamUp": [
+      "Every team needs chemistry.",
+      "Avengers mode.",
+      "Squad synergy achieved."
+    ],
+    "quotesRespect": [
+      "That was superhero-level effort.",
+      "Strong performance.",
+      "You earned your panel today."
+    ],
+    "quotesPain": [
+      "Collector back acting up.",
+      "My spine just issued a complaint.",
+      "That hit harder than leg day."
+    ],
+    "quotesHumiliated": [
+      "That belongs in the blooper issue.",
+      "Worst crossover ever.",
+      "I got folded by the writers."
+    ]
+  },
+  {
+    "id": "brock_26",
+    "name": "Brock",
+    "age": 26,
+    "job": "Personal trainer",
+    "conditions": ["overtrained", "pre-workout overload"],
+    "tagline": "Built in the gym.",
+    "bio": "Brock practically lives in the weight room. Incredible strength and stamina, but sometimes burns himself out going too hard too early.",
+    "passRate": 0.88,
+    "modifiedRate": 0.08,
+    "failRate": 0.03,
+    "timingMultiplier": 0.82,
+    "colorArgb": 4294198070,
+    "quotesVictory": [
+      "LIGHT WEIGHT!",
+      "You even lift?",
+      "Gym supremacy."
+    ],
+    "quotesForfeit": [
+      "Okay maybe I overdid pre-workout.",
+      "Skipped recovery day.",
+      "Muscles tapped out."
+    ],
+    "quotesModified": [
+      "Controlled reps matter.",
+      "Form over ego.",
+      "Still getting gains."
+    ],
+    "quotesClutch": [
+      "Pure hypertrophy survival.",
+      "That burn was unreal.",
+      "Locked in."
+    ],
+    "quotesStartMatch": [
+      "Let's train.",
+      "No weak reps.",
+      "Time to grow."
+    ],
+    "quotesLegendary": [
+      "Discipline builds monsters.",
+      "The grind never ends.",
+      "Pain creates power."
+    ],
+    "quotesTeamUp": [
+      "Push each other harder.",
+      "Spot me, bro.",
+      "Team gains."
+    ],
+    "quotesRespect": [
+      "Strong work.",
+      "You train seriously.",
+      "Respect the grind."
+    ],
+    "quotesPain": [
+      "Everything is pumped.",
+      "Muscles screaming.",
+      "Need protein immediately."
+    ],
+    "quotesHumiliated": [
+      "Bro... that's embarrassing.",
+      "I lost my pump.",
+      "Gym bros never recovering from this."
+    ]
+  },
+  {
+    "id": "iris_38",
+    "name": "Iris",
+    "age": 38,
+    "job": "Novelist",
+    "conditions": ["neck strain", "coffee dependence"],
+    "tagline": "Turns exhaustion into chapters.",
+    "bio": "Iris writes late into the night and survives mostly on caffeine and determination. Endurance rounds become internal monologues.",
+    "passRate": 0.59,
+    "modifiedRate": 0.31,
+    "failRate": 0.07,
+    "timingMultiplier": 1.1,
+    "colorArgb": 4291624959,
+    "quotesVictory": [
+      "Another chapter completed.",
+      "Conflict builds character.",
+      "Strong ending."
+    ],
+    "quotesForfeit": [
+      "That scene needed revisions.",
+      "Plot twist: exhaustion.",
+      "Bad ending unlocked."
+    ],
+    "quotesModified": [
+      "Pacing matters.",
+      "Careful edits.",
+      "Slow progress still progresses."
+    ],
+    "quotesClutch": [
+      "That climax almost got me.",
+      "Narrative tension survived.",
+      "Barely finished the chapter."
+    ],
+    "quotesStartMatch": [
+      "Let's begin.",
+      "Every story starts somewhere.",
+      "Time to write the scene."
+    ],
+    "quotesLegendary": [
+      "Words shape endurance.",
+      "Persistence writes greatness.",
+      "Stories survive struggle."
+    ],
+    "quotesTeamUp": [
+      "Every cast needs support.",
+      "Ensemble effort.",
+      "Let's finish this together."
+    ],
+    "quotesRespect": [
+      "That was compelling.",
+      "Strong execution.",
+      "You handled pressure well."
+    ],
+    "quotesPain": [
+      "My neck is destroyed.",
+      "Need caffeine and silence.",
+      "Mental fatigue is real."
+    ],
+    "quotesHumiliated": [
+      "That draft was terrible.",
+      "Embarrassing chapter.",
+      "Deleting this from canon."
+    ]
+  },
+  {
+    "id": "cole_33",
+    "name": "Cole",
+    "age": 33,
+    "job": "Former infantry",
+    "conditions": ["old knee injury", "hyper disciplined"],
+    "tagline": "Treats every workout like training.",
+    "bio": "Cole pushes through nearly everything with discipline alone. Loud, competitive, and impossible to intimidate.",
+    "passRate": 0.81,
+    "modifiedRate": 0.12,
+    "failRate": 0.05,
+    "timingMultiplier": 0.9,
+    "colorArgb": 4284922730,
+    "quotesVictory": [
+      "Mission accomplished.",
+      "Outstanding work.",
+      "Target neutralized."
+    ],
+    "quotesForfeit": [
+      "Tactical retreat.",
+      "Knee compromised.",
+      "Recover and redeploy."
+    ],
+    "quotesModified": [
+      "Adapt and overcome.",
+      "Controlled movement.",
+      "Stay mission capable."
+    ],
+    "quotesClutch": [
+      "Stayed operational.",
+      "Pressure creates discipline.",
+      "Close one."
+    ],
+    "quotesStartMatch": [
+      "Lock it in.",
+      "Move with purpose.",
+      "No excuses."
+    ],
+    "quotesLegendary": [
+      "Discipline outlasts motivation.",
+      "Pressure reveals character.",
+      "Stay dangerous."
+    ],
+    "quotesTeamUp": [
+      "Nobody falls behind.",
+      "Work as a unit.",
+      "Move together."
+    ],
+    "quotesRespect": [
+      "Strong effort.",
+      "You kept composure.",
+      "Respect earned."
+    ],
+    "quotesPain": [
+      "Knee's acting up.",
+      "That burned deep.",
+      "Need recovery."
+    ],
+    "quotesHumiliated": [
+      "That was unacceptable.",
+      "Terrible execution.",
+      "We're not discussing that round."
+    ]
+  },
+  {
+    "id": "hank_49",
+    "name": "Hank",
+    "age": 49,
+    "job": "Fishing & hunting guide",
+    "conditions": ["old shoulder injury", "weathered joints"],
+    "tagline": "Built by wilderness and hard mornings.",
+    "bio": "Hank spends most of his life outdoors. Quiet endurance, strong grip, and stubborn resilience make him dangerous late game.",
+    "passRate": 0.7,
+    "modifiedRate": 0.22,
+    "failRate": 0.06,
+    "timingMultiplier": 1.02,
+    "colorArgb": 4286141762,
+    "quotesVictory": [
+      "That's wilderness strength.",
+      "Built outdoors.",
+      "Nature trains harder."
+    ],
+    "quotesForfeit": [
+      "Shoulder's barking.",
+      "Need campfire recovery.",
+      "That one hit deep."
+    ],
+    "quotesModified": [
+      "Conserve energy.",
+      "Steady movement.",
+      "No wasted effort."
+    ],
+    "quotesClutch": [
+      "Still standing in the storm.",
+      "Barely made it.",
+      "Tough terrain today."
+    ],
+    "quotesStartMatch": [
+      "Let's see who's durable.",
+      "Cold morning energy.",
+      "Stay steady."
+    ],
+    "quotesLegendary": [
+      "Nature rewards patience.",
+      "Endurance beats noise.",
+      "The woods build resilience."
+    ],
+    "quotesTeamUp": [
+      "Watch your footing.",
+      "Stick together.",
+      "Everybody pulls weight."
+    ],
+    "quotesRespect": [
+      "You've got grit.",
+      "Strong survival instincts.",
+      "Solid effort."
+    ],
+    "quotesPain": [
+      "Joints feel weathered.",
+      "That shoulder's rough today.",
+      "Need a long rest."
+    ],
+    "quotesHumiliated": [
+      "Well that was ugly.",
+      "Fell apart out there.",
+      "Nature would've laughed at that."
+    ]
+  },
+  {
+    "id": "zion_41",
+    "name": "Zion",
+    "age": 41,
+    "job": "Drummer & herbalist",
+    "conditions": ["late sleeper", "laid back pacing"],
+    "tagline": "Moves with rhythm and calm.",
+    "bio": "Zion stays relaxed no matter the pressure. Breathing and pacing are excellent, but explosive exercises aren't his style.",
+    "passRate": 0.67,
+    "modifiedRate": 0.24,
+    "failRate": 0.06,
+    "timingMultiplier": 1.03,
+    "colorArgb": 4293467747,
+    "quotesVictory": [
+      "One love, one victory.",
+      "Rhythm conquers stress.",
+      "Natural vibrations."
+    ],
+    "quotesForfeit": [
+      "Body say slow down.",
+      "Need balance again.",
+      "Too much tension."
+    ],
+    "quotesModified": [
+      "Easy pacing.",
+      "Flow with the movement.",
+      "No rush."
+    ],
+    "quotesClutch": [
+      "Still breathing steady.",
+      "Close one, brethren.",
+      "Stayed centered."
+    ],
+    "quotesStartMatch": [
+      "Breathe and move.",
+      "Peaceful energy today.",
+      "Stay grounded."
+    ],
+    "quotesLegendary": [
+      "Calm minds endure longer.",
+      "Rhythm guides strength.",
+      "Balance creates resilience."
+    ],
+    "quotesTeamUp": [
+      "Move together naturally.",
+      "Support good energy.",
+      "Unity brings strength."
+    ],
+    "quotesRespect": [
+      "Strong spirit.",
+      "You moved with confidence.",
+      "Respect and balance."
+    ],
+    "quotesPain": [
+      "Energy running low.",
+      "Need recovery vibrations.",
+      "That tension hit hard."
+    ],
+    "quotesHumiliated": [
+      "That was rough, brethren.",
+      "Lost my rhythm completely.",
+      "No balance there."
+    ]
+  },
+  {
+    "id": "bigmoe_37",
+    "name": "Big Moe",
+    "age": 37,
+    "job": "Food truck owner",
+    "conditions": ["obese", "surprisingly explosive"],
+    "tagline": "Powered by jokes and seasoning.",
+    "bio": "Big Moe keeps morale high even while struggling through workouts. Surprisingly dangerous in short bursts, terrible in endurance rounds.",
+    "passRate": 0.57,
+    "modifiedRate": 0.35,
+    "failRate": 0.07,
+    "timingMultiplier": 1.18,
+    "colorArgb": 4294940672,
+    "quotesVictory": [
+      "BIG MAN MOVES!",
+      "Powered by barbecue.",
+      "Never underestimate snack strength."
+    ],
+    "quotesForfeit": [
+      "I saw heaven during that set.",
+      "My ankles filing complaints.",
+      "Cardio is oppression."
+    ],
+    "quotesModified": [
+      "Heavyweight strategy.",
+      "Slow motion domination.",
+      "Efficiency mode."
+    ],
+    "quotesClutch": [
+      "I barely survived that buffet battle.",
+      "Heart rate CRITICAL.",
+      "Still standing somehow."
+    ],
+    "quotesStartMatch": [
+      "Let's get this cookout started.",
+      "Stretch first, snacks later.",
+      "Big energy today."
+    ],
+    "quotesLegendary": [
+      "Mass moves mass.",
+      "Humor survives struggle.",
+      "Big bodies still battle."
+    ],
+    "quotesTeamUp": [
+      "Nobody quits hungry.",
+      "Let's survive together.",
+      "Big support energy."
+    ],
+    "quotesRespect": [
+      "Okay you got skills.",
+      "That was clean work.",
+      "Respect, for real."
+    ],
+    "quotesPain": [
+      "Everything hurts right now.",
+      "My knees hate me.",
+      "Need oxygen and tacos."
+    ],
+    "quotesHumiliated": [
+      "That was built different embarrassing.",
+      "I folded like a lawn chair.",
+      "Absolutely tragic performance."
+    ]
+  }
+]

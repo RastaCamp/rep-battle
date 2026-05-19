@@ -1,0 +1,234 @@
+# Rep Battle — NPC Profile Reference
+# Machine-readable source: assets/data/npc_profiles.json
+# Avatar images: assets/images/npcs/{id}.png (placeholder if missing)
+
+## How AI / devs should use this file
+- Edit JSON for gameplay numbers (passRate, failRate, timingMultiplier).
+- Edit bio/tagline here or in JSON for flavor text.
+- Add new entries by copying the template at the bottom.
+- colorArgb is Flutter Color value (ARGB32). NPC picks own color in JSON.
+
+## Bark lines (in-game speech)
+All arrays live in assets/data/npc_profiles.json (or run tool/build_npc_json.py to merge quote batches).
+
+| Field | When it plays |
+|-------|----------------|
+| quotesVictory | NPC will PASS a normal card (~34% chance) |
+| quotesForfeit | NPC will FAIL |
+| quotesModified | NPC will use MODIFIED |
+| quotesClutch | NPC PASS on tough cards (8+ reps, Q/K/Joker) |
+| quotesStartMatch | Match begins (~52% per NPC, staggered) |
+| quotesLegendary | Rare ~7% override on any bark |
+| quotesTeamUp | King / group challenges with 3+ players |
+| quotesRespect | After human PASS/MODIFIED on tough card or combo 3+ (~42%) |
+| quotesPain | NPC struggling mid-turn (modified / tough cards) |
+| quotesHumiliated | NPC FAIL (~58% instead of standard forfeit line) |
+
+Edit tool/npc_quotes_respect_pain.py for respect/pain batches, then: python tool/build_npc_json.py
+Quote-only patches: tool/npc_quotes_batch5_extra.py → python tool/merge_npc_quotes.py
+
+## Quick stats legend
+- passRate: chance to PASS a card (0.0–1.0)
+- modifiedRate: chance to use MODIFIED instead of full PASS when struggling
+- failRate: extra fail weight (lower is better for player experience)
+- timingMultiplier: scales (reps + 3) second turn timer
+
+---
+
+### anton_40 — Anton, 40
+- Job: Garbage collector
+- Conditions: Type 2 diabetes, tired knees
+- Tagline: Works nights, manages blood sugar between routes.
+- Gameplay: Slower timing (1.12×). Often modified. Solid mid pass rate. Rare early fail.
+
+### mia_12 — Mia, 12
+- Job: Middle school student
+- Conditions: Asthma, growing fast
+- Tagline: Gym class hero with an inhaler in her pocket.
+- Gameplay: Faster timer (0.95×). Good pass rate. Uses modified on cardio.
+
+### rosa_67 — Rosa, 67
+- Job: Retired teacher
+- Conditions: Arthritis, hip replacement
+- Tagline: Former PE coach with wise pacing.
+- Gameplay: Slow (1.2×). High modified rate. Very low fail—teaches by example.
+
+### derek_28 — Derek, 28
+- Job: Warehouse loader
+- Conditions: Smoker, sore back
+- Tagline: Lifts boxes all day, skips cardio.
+- Gameplay: Strong on strength, weak on climbers. Mid-high pass.
+
+### jin_19 — Jin, 19
+- Job: College gamer
+- Conditions: Sedentary, wrist strain
+- Tagline: Built for keyboards, learning the gym.
+- Gameplay: Improving NPC. Modified often. Average pass.
+
+### carmen_35 — Carmen, 35
+- Job: Nurse
+- Conditions: 12-hour shifts, plantar fasciitis
+- Tagline: On her feet all day—respects recovery.
+- Gameplay: Reliable team player. Good on Kings. Low fail.
+
+### tyler_16 — Tyler, 16
+- Job: High school linebacker
+- Conditions: Seasonal asthma, ankle brace
+- Tagline: Friday night lights energy.
+- Gameplay: High pass (0.78). Competitive. Fast timer.
+
+### grace_52 — Grace, 52
+- Job: Office manager
+- Conditions: Prediabetes, neck pain
+- Tagline: Desk job, evening walks.
+- Gameplay: Steady. Modified pushups common. Rare rage-quit.
+
+### omar_45 — Omar, 45
+- Job: Taxi driver
+- Conditions: High blood pressure, long sitting
+- Tagline: Knows every shortcut, tight hips.
+- Gameplay: Modified squats. Slower timer. Mid pass.
+
+### lily_9 — Lily, 9
+- Job: Fourth grader
+- Conditions: None serious, short attention
+- Tagline: Thinks mountain climbers are hilarious.
+- Gameplay: High modified rate. Fun, low fail. Kid-friendly.
+
+### vic_31 — Vic, 31
+- Job: Construction foreman
+- Conditions: Shoulder impingement, coffee addict
+- Tagline: Hard hat, harder pushups.
+- Gameplay: Strong. Shoulder limits some pushups → modified.
+
+### elena_24 — Elena, 24
+- Job: Dance instructor
+- Conditions: Old ankle sprain
+- Tagline: Cardio queen, holds forever.
+- Gameplay: High pass (0.82). Low fail. Fast timer.
+
+### frank_58 — Frank, 58
+- Job: Auto mechanic
+- Conditions: Hearing loss, beer belly
+- Tagline: Under the hood strength.
+- Gameplay: Arm strong, cardio weak. Shame-free modified.
+
+### zoe_22 — Zoe, 22
+- Job: Barista / climber
+- Conditions: Vegan diet, finger tape
+- Tagline: Grip strength for days.
+- Gameplay: High pass. Great on holds/climbers.
+
+### sam_70 — Sam, 70
+- Job: Grandparent & gardener
+- Conditions: Mild COPD, balance caution
+- Tagline: Raised three kids, still showing up.
+- Gameplay: Slowest timer (1.25×). Highest modified. Almost never fails early.
+
+### nova_27 — Nova, 27 (SURPRISE ENTRANT)
+- Job: Mystery entrant
+- Conditions: Unknown / wildcard
+- Tagline: Surprise arena fighter—stats vary.
+- Gameplay: Optional solo surprise opponent. Slight stat variance each match.
+
+### rex_43 — Rex, 43
+- Job: Conspiracy podcaster
+- Conditions: Sleep deprived, high caffeine
+- Tagline: Sees patterns everywhere.
+- Gameplay: Solid pass rate. Rants mid-match energy. Conspiracy-flavor barks.
+
+### milo_34 — Milo, 34
+- Job: Comic shop clerk
+- Conditions: Bad posture, collector back
+- Tagline: Lives for first editions and hero arcs.
+- Gameplay: Comic-book bark lines. Mid-tier stats, drama-motivated.
+
+### brock_26 — Brock, 26
+- Job: Personal trainer
+- Conditions: Overtrained, pre-workout overload
+- Tagline: Built in the gym.
+- Gameplay: Elite (0.88 pass, 0.82× timer). Hardest standard NPC. Gym bro lines.
+
+### iris_38 — Iris, 38
+- Job: Novelist
+- Conditions: Neck strain, coffee dependence
+- Tagline: Turns exhaustion into chapters.
+- Gameplay: Writer-themed lines. Endurance pacing, high modified.
+
+### cole_33 — Cole, 33
+- Job: Former infantry
+- Conditions: Old knee injury, hyper disciplined
+- Tagline: Treats every workout like training.
+- Gameplay: High pass (0.81). Military bark set. Fast timer.
+
+### hank_49 — Hank, 49
+- Job: Fishing & hunting guide
+- Conditions: Old shoulder injury, weathered joints
+- Tagline: Built by wilderness and hard mornings.
+- Gameplay: Outdoor endurance. Strong late-game vibe. Steady stats.
+
+### zion_41 — Zion, 41
+- Job: Drummer & herbalist
+- Conditions: Late sleeper, laid back pacing
+- Tagline: Moves with rhythm and calm.
+- Gameplay: Calm pacing lines. Good pass, relaxed timing multiplier.
+
+### bigmoe_37 — Big Moe, 37
+- Job: Food truck owner
+- Conditions: Obese, surprisingly explosive
+- Tagline: Powered by jokes and seasoning.
+- Gameplay: High modified, slow timer (1.18×). Burst strength, weak endurance. Comic relief.
+
+### devin_21 — Devin, 21
+- Job: Computer science student
+- Conditions: Poor posture, sleep deprived
+- Tagline: Lives on energy drinks and debugging.
+- Gameplay: Coder/gamer lines. Mid stats, adapts over time feel.
+
+### trish_42 — Trish, 42
+- Job: Bakery cashier
+- Conditions: Obese, bad knees
+- Tagline: Funny, loud, impossible to discourage.
+- Gameplay: Morale NPC. High modified, slow timer. Full bark set.
+
+### marcus_47 — Marcus, 47
+- Job: Former chef
+- Conditions: Chemotherapy fatigue, low stamina
+- Tagline: Still fighting.
+- Gameplay: Low pass, very high modified (0.48). Slowest pacing — inspirational, careful tone.
+
+### nina_29 — Nina, 29
+- Job: Rehab patient
+- Conditions: Muscle atrophy, limited mobility
+- Tagline: Relearning strength one step at a time.
+- Gameplay: Lowest pass rate (0.33). Highest modified. Slow timer (1.4×). Gentle, brave lines.
+
+### sasha_31 — Sasha, 31
+- Job: Marathon runner
+- Conditions: Overtrained calves, runner's knee
+- Tagline: Built for distance.
+- Gameplay: Elite endurance (0.84 pass, 0.82× timer). Runner-themed barks.
+
+---
+
+## Adding more NPCs
+1. Add full profile object to `assets/data/npc_profiles.json` **or** drop a batch JSON in `tool/` and run `python tool/merge_new_profiles.py tool/your_batch.json`
+2. Add portrait: `assets/images/npcs/{id}.png`
+3. Update this file with a short summary
+
+## Template for new NPC (copy to JSON)
+{
+  "id": "unique_id_age",
+  "name": "First",
+  "age": 30,
+  "job": "Occupation",
+  "conditions": ["condition1"],
+  "tagline": "One line hook.",
+  "bio": "2-4 sentences for profile popup.",
+  "passRate": 0.65,
+  "modifiedRate": 0.25,
+  "failRate": 0.06,
+  "timingMultiplier": 1.0,
+  "colorArgb": 4294198070,
+  "surpriseEntrant": false
+}

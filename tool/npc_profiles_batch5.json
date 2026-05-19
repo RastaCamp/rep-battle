@@ -1,0 +1,197 @@
+[
+  {
+    "id": "devin_21",
+    "name": "Devin",
+    "age": 21,
+    "job": "Computer science student",
+    "conditions": ["poor posture", "sleep deprived"],
+    "tagline": "Lives on energy drinks and debugging.",
+    "bio": "Devin spends most nights coding, gaming, and forgetting to stretch. Weak endurance at first, but learns patterns quickly and adapts fast.",
+    "passRate": 0.64,
+    "modifiedRate": 0.27,
+    "failRate": 0.07,
+    "timingMultiplier": 1.03,
+    "colorArgb": 4282339765,
+    "quotesVictory": [
+      "Optimization complete.",
+      "Outplayed.",
+      "Brain power wins again."
+    ],
+    "quotesForfeit": [
+      "System overload.",
+      "Need sleep and caffeine.",
+      "Runtime error."
+    ],
+    "quotesRespect": [
+      "That was actually impressive.",
+      "Respect. You optimized well.",
+      "Solid execution."
+    ],
+    "quotesPain": [
+      "My spine is collapsing.",
+      "Wrists are cooked.",
+      "I need posture recovery."
+    ],
+    "quotesHumiliated": [
+      "Critical failure.",
+      "That bugged me emotionally.",
+      "Delete the logs."
+    ]
+  },
+  {
+    "id": "trish_42",
+    "name": "Trish",
+    "age": 42,
+    "job": "Bakery cashier",
+    "conditions": ["obese", "bad knees"],
+    "tagline": "Funny, loud, and impossible to discourage.",
+    "bio": "Trish jokes through everything. She struggles with endurance but somehow keeps morale high even when she's exhausted.",
+    "passRate": 0.56,
+    "modifiedRate": 0.36,
+    "failRate": 0.07,
+    "timingMultiplier": 1.2,
+    "colorArgb": 4294940672,
+    "quotesVictory": [
+      "Big girl ENERGY!",
+      "Powered by pastries.",
+      "Y'all underestimated me again."
+    ],
+    "quotesForfeit": [
+      "My knees filing lawsuits.",
+      "Cardio is disrespectful.",
+      "I need snacks and oxygen."
+    ],
+    "quotesRespect": [
+      "Okay you kinda killed that.",
+      "Respect where respect due.",
+      "You earned that one."
+    ],
+    "quotesPain": [
+      "Everything hurts right now.",
+      "I can hear my joints arguing.",
+      "Need a chair immediately."
+    ],
+    "quotesHumiliated": [
+      "That was tragically bad.",
+      "I folded like cheap laundry.",
+      "Absolutely not my moment."
+    ]
+  },
+  {
+    "id": "marcus_47",
+    "name": "Marcus",
+    "age": 47,
+    "job": "Former chef",
+    "conditions": ["chemotherapy fatigue", "low stamina"],
+    "tagline": "Still fighting.",
+    "bio": "Marcus moves slower than he used to, but refuses to quit easily. Every completed round feels like a victory bigger than the game.",
+    "passRate": 0.42,
+    "modifiedRate": 0.48,
+    "failRate": 0.07,
+    "timingMultiplier": 1.3,
+    "colorArgb": 4284513675,
+    "quotesVictory": [
+      "Still here.",
+      "One more round won.",
+      "Fight's not over."
+    ],
+    "quotesForfeit": [
+      "Energy's gone today.",
+      "Body tapped out before spirit did.",
+      "Need recovery."
+    ],
+    "quotesRespect": [
+      "Strong heart. I respect that.",
+      "You kept pushing.",
+      "That took courage."
+    ],
+    "quotesPain": [
+      "Fatigue hit hard.",
+      "Everything feels heavy.",
+      "Need to breathe a minute."
+    ],
+    "quotesHumiliated": [
+      "Well… rough round.",
+      "Can't win every battle.",
+      "That one hurt the pride."
+    ]
+  },
+  {
+    "id": "nina_29",
+    "name": "Nina",
+    "age": 29,
+    "job": "Rehab patient",
+    "conditions": ["muscle atrophy", "limited mobility"],
+    "tagline": "Relearning strength one step at a time.",
+    "bio": "Nina spent months bedridden recovering from severe illness. Small movements are major victories, and she approaches every challenge carefully but bravely.",
+    "passRate": 0.33,
+    "modifiedRate": 0.56,
+    "failRate": 0.08,
+    "timingMultiplier": 1.4,
+    "colorArgb": 4291624959,
+    "quotesVictory": [
+      "Progress is progress.",
+      "I did it.",
+      "Small victories matter."
+    ],
+    "quotesForfeit": [
+      "Need a recovery break.",
+      "My body isn't ready yet.",
+      "Tomorrow I'll do more."
+    ],
+    "quotesRespect": [
+      "You're really strong.",
+      "That inspired me a little.",
+      "Good work."
+    ],
+    "quotesPain": [
+      "Muscles feel shaky.",
+      "Everything drains fast.",
+      "Need to rest."
+    ],
+    "quotesHumiliated": [
+      "That was harder than expected.",
+      "Trying not to get discouraged.",
+      "One bad round doesn't define me."
+    ]
+  },
+  {
+    "id": "sasha_31",
+    "name": "Sasha",
+    "age": 31,
+    "job": "Marathon runner",
+    "conditions": ["overtrained calves", "runner's knee"],
+    "tagline": "Built for distance.",
+    "bio": "Sasha thrives during endurance rounds and rarely panics under pressure. Explosive strength isn't her specialty, but stamina is elite.",
+    "passRate": 0.84,
+    "modifiedRate": 0.1,
+    "failRate": 0.04,
+    "timingMultiplier": 0.82,
+    "colorArgb": 4288423854,
+    "quotesVictory": [
+      "Pace beats panic.",
+      "Distance mindset.",
+      "Still breathing easy."
+    ],
+    "quotesForfeit": [
+      "Runner's knee acting up.",
+      "Overtrained this week.",
+      "Need recovery miles."
+    ],
+    "quotesRespect": [
+      "Strong pacing.",
+      "You stayed composed.",
+      "Respect. That was disciplined."
+    ],
+    "quotesPain": [
+      "Calves are on fire.",
+      "Legs feel destroyed.",
+      "That endurance stack hurt."
+    ],
+    "quotesHumiliated": [
+      "That was not my pace.",
+      "Completely lost rhythm.",
+      "I crashed hard there."
+    ]
+  }
+]

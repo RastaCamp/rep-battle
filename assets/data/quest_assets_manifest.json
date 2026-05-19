@@ -1,0 +1,343 @@
+{
+  "map": "assets/images/quest/map.png",
+  "locations": [
+    {
+      "id": "boss_champions_circle",
+      "path": "assets/images/quest/locations/boss_champions_circle.png",
+      "label": "boss champions circle",
+      "type": "boss"
+    },
+    {
+      "id": "boss_epoch_of_collosus",
+      "path": "assets/images/quest/locations/boss_epoch_of_collosus.png",
+      "label": "boss epoch of collosus",
+      "type": "boss"
+    },
+    {
+      "id": "boss_femat_arena",
+      "path": "assets/images/quest/locations/boss_femat_arena.png",
+      "label": "boss femat arena",
+      "type": "boss"
+    },
+    {
+      "id": "boss_iron_throne",
+      "path": "assets/images/quest/locations/boss_iron_throne.png",
+      "label": "boss iron throne",
+      "type": "boss"
+    },
+    {
+      "id": "combat_ancient_vault",
+      "path": "assets/images/quest/locations/combat_ancient_vault.png",
+      "label": "combat ancient vault",
+      "type": "combat"
+    },
+    {
+      "id": "combat_ashen_arena",
+      "path": "assets/images/quest/locations/combat_ashen_arena.png",
+      "label": "combat ashen arena",
+      "type": "combat"
+    },
+    {
+      "id": "combat_bloodstained_pit",
+      "path": "assets/images/quest/locations/combat_bloodstained_pit.png",
+      "label": "combat bloodstained pit",
+      "type": "combat"
+    },
+    {
+      "id": "combat_burning_docks",
+      "path": "assets/images/quest/locations/combat_burning_docks.png",
+      "label": "combat burning docks",
+      "type": "combat"
+    },
+    {
+      "id": "combat_chained_beltic",
+      "path": "assets/images/quest/locations/combat_chained_beltic.png",
+      "label": "combat chained beltic",
+      "type": "combat"
+    },
+    {
+      "id": "combat_chained_depths",
+      "path": "assets/images/quest/locations/combat_chained_depths.png",
+      "label": "combat chained depths",
+      "type": "combat"
+    },
+    {
+      "id": "combat_charred_gauntlet",
+      "path": "assets/images/quest/locations/combat_charred_gauntlet.png",
+      "label": "combat charred gauntlet",
+      "type": "combat"
+    },
+    {
+      "id": "combat_collapsed_hall",
+      "path": "assets/images/quest/locations/combat_collapsed_hall.png",
+      "label": "combat collapsed hall",
+      "type": "combat"
+    },
+    {
+      "id": "combat_collersed_mull",
+      "path": "assets/images/quest/locations/combat_collersed_mull.png",
+      "label": "combat collersed mull",
+      "type": "combat"
+    },
+    {
+      "id": "combat_cracked_coultyard",
+      "path": "assets/images/quest/locations/combat_cracked_coultyard.png",
+      "label": "combat cracked coultyard",
+      "type": "combat"
+    },
+    {
+      "id": "combat_cruton_bore",
+      "path": "assets/images/quest/locations/combat_cruton_bore.png",
+      "label": "combat cruton bore",
+      "type": "combat"
+    },
+    {
+      "id": "combat_cursed_catacombs",
+      "path": "assets/images/quest/locations/combat_cursed_catacombs.png",
+      "label": "combat cursed catacombs",
+      "type": "combat"
+    },
+    {
+      "id": "combat_dessicrated_alter",
+      "path": "assets/images/quest/locations/combat_dessicrated_alter.png",
+      "label": "combat dessicrated alter",
+      "type": "combat"
+    },
+    {
+      "id": "combat_dread_hatchery",
+      "path": "assets/images/quest/locations/combat_dread_hatchery.png",
+      "label": "combat dread hatchery",
+      "type": "combat"
+    },
+    {
+      "id": "combat_forsaken_tomb",
+      "path": "assets/images/quest/locations/combat_forsaken_tomb.png",
+      "label": "combat forsaken tomb",
+      "type": "combat"
+    },
+    {
+      "id": "combat_helltire_ponge",
+      "path": "assets/images/quest/locations/combat_helltire_ponge.png",
+      "label": "combat helltire ponge",
+      "type": "combat"
+    },
+    {
+      "id": "combat_ruined_passage",
+      "path": "assets/images/quest/locations/combat_ruined_passage.png",
+      "label": "combat ruined passage",
+      "type": "combat"
+    },
+    {
+      "id": "combat_runed_passage",
+      "path": "assets/images/quest/locations/combat_runed_passage.png",
+      "label": "combat runed passage",
+      "type": "combat"
+    },
+    {
+      "id": "combat_screwed_hall",
+      "path": "assets/images/quest/locations/combat_screwed_hall.png",
+      "label": "combat screwed hall",
+      "type": "combat"
+    },
+    {
+      "id": "combat_with_heal_or_rest_grimy_collar",
+      "path": "assets/images/quest/locations/combat_with_heal_or_rest_grimy_collar.png",
+      "label": "combat with heal or rest grimy collar",
+      "type": "combat"
+    },
+    {
+      "id": "combat_with_poison_pits_of_venom",
+      "path": "assets/images/quest/locations/combat_with_poison_pits_of_venom.png",
+      "label": "combat with poison pits of venom",
+      "type": "combat"
+    },
+    {
+      "id": "rest_mystic_well",
+      "path": "assets/images/quest/locations/rest_mystic_well.png",
+      "label": "rest mystic well",
+      "type": "rest"
+    },
+    {
+      "id": "rest_quiee_refuge",
+      "path": "assets/images/quest/locations/rest_quiee_refuge.png",
+      "label": "rest quiee refuge",
+      "type": "rest"
+    },
+    {
+      "id": "rest_serene_tri",
+      "path": "assets/images/quest/locations/rest_serene_tri.png",
+      "label": "rest serene tri",
+      "type": "rest"
+    },
+    {
+      "id": "rest_wards_of_agony",
+      "path": "assets/images/quest/locations/rest_wards_of_agony.png",
+      "label": "rest wards of agony",
+      "type": "rest"
+    },
+    {
+      "id": "trap_alpha_tunnel",
+      "path": "assets/images/quest/locations/trap_alpha_tunnel.png",
+      "label": "trap alpha tunnel",
+      "type": "trap"
+    },
+    {
+      "id": "trap_collapsing_bridge",
+      "path": "assets/images/quest/locations/trap_collapsing_bridge.png",
+      "label": "trap collapsing bridge",
+      "type": "trap"
+    },
+    {
+      "id": "trap_haunted_hall",
+      "path": "assets/images/quest/locations/trap_haunted_hall.png",
+      "label": "trap haunted hall",
+      "type": "trap"
+    },
+    {
+      "id": "trap_poison_dart",
+      "path": "assets/images/quest/locations/trap_poison_dart.png",
+      "label": "trap poison dart",
+      "type": "trap"
+    },
+    {
+      "id": "trap_pressure",
+      "path": "assets/images/quest/locations/trap_pressure.png",
+      "label": "trap pressure",
+      "type": "trap"
+    },
+    {
+      "id": "trap_spike_tunnel",
+      "path": "assets/images/quest/locations/trap_spike_tunnel.png",
+      "label": "trap spike tunnel",
+      "type": "trap"
+    },
+    {
+      "id": "trap_swing_blade",
+      "path": "assets/images/quest/locations/trap_swing_blade.png",
+      "label": "trap swing blade",
+      "type": "trap"
+    },
+    {
+      "id": "treasure_abandoned_mines",
+      "path": "assets/images/quest/locations/treasure_abandoned_mines.png",
+      "label": "treasure abandoned mines",
+      "type": "treasure"
+    },
+    {
+      "id": "treasure_ancient_armory",
+      "path": "assets/images/quest/locations/treasure_ancient_armory.png",
+      "label": "treasure ancient armory",
+      "type": "treasure"
+    },
+    {
+      "id": "treasure_buried_treasure",
+      "path": "assets/images/quest/locations/treasure_buried_treasure.png",
+      "label": "treasure buried treasure",
+      "type": "treasure"
+    },
+    {
+      "id": "treasure_hidden_cache",
+      "path": "assets/images/quest/locations/treasure_hidden_cache.png",
+      "label": "treasure hidden cache",
+      "type": "treasure"
+    },
+    {
+      "id": "treasure_old_armory",
+      "path": "assets/images/quest/locations/treasure_old_armory.png",
+      "label": "treasure old armory",
+      "type": "treasure"
+    }
+  ],
+  "rooms": [
+    {
+      "id": "boss_arena",
+      "path": "assets/images/quest/rooms/boss_arena.png",
+      "label": "boss arena",
+      "type": "boss"
+    },
+    {
+      "id": "boss_brutal_arena",
+      "path": "assets/images/quest/rooms/boss_brutal_arena.png",
+      "label": "boss brutal arena",
+      "type": "boss"
+    },
+    {
+      "id": "boss_final_arena",
+      "path": "assets/images/quest/rooms/boss_final_arena.png",
+      "label": "boss final arena",
+      "type": "boss"
+    },
+    {
+      "id": "combat_arena",
+      "path": "assets/images/quest/rooms/combat_arena.png",
+      "label": "combat arena - Copy",
+      "type": "combat"
+    },
+    {
+      "id": "combat_brute_arena",
+      "path": "assets/images/quest/rooms/combat_brute_arena.png",
+      "label": "combat brute arena",
+      "type": "combat"
+    },
+    {
+      "id": "combat_rust_arena",
+      "path": "assets/images/quest/rooms/combat_rust_arena.png",
+      "label": "combat rust arena",
+      "type": "combat"
+    },
+    {
+      "id": "combat_rusty_arena",
+      "path": "assets/images/quest/rooms/combat_rusty_arena.png",
+      "label": "combat rusty arena",
+      "type": "combat"
+    },
+    {
+      "id": "rest_arena",
+      "path": "assets/images/quest/rooms/rest_arena.png",
+      "label": "rest arena",
+      "type": "rest"
+    },
+    {
+      "id": "rest_recovery_arena",
+      "path": "assets/images/quest/rooms/rest_recovery_arena.png",
+      "label": "rest recovery arena",
+      "type": "rest"
+    },
+    {
+      "id": "trap_arena_2",
+      "path": "assets/images/quest/rooms/trap_arena_2.png",
+      "label": "trap arena 2",
+      "type": "trap"
+    },
+    {
+      "id": "trap_dusty_arena",
+      "path": "assets/images/quest/rooms/trap_dusty_arena.png",
+      "label": "trap dusty arena",
+      "type": "trap"
+    },
+    {
+      "id": "trap_sprite_arena",
+      "path": "assets/images/quest/rooms/trap_sprite_arena.png",
+      "label": "trap sprite arena",
+      "type": "trap"
+    },
+    {
+      "id": "treasure_arena_2",
+      "path": "assets/images/quest/rooms/treasure_arena_2.png",
+      "label": "treasure arena 2",
+      "type": "treasure"
+    },
+    {
+      "id": "treasure_arena",
+      "path": "assets/images/quest/rooms/treasure_arena.png",
+      "label": "treasure arena",
+      "type": "treasure"
+    },
+    {
+      "id": "treasure_golden_arena",
+      "path": "assets/images/quest/rooms/treasure_golden_arena.png",
+      "label": "treasure golden arena",
+      "type": "treasure"
+    }
+  ]
+}

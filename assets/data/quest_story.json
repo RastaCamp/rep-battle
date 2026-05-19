@@ -1,0 +1,162 @@
+{
+  "version": 1,
+  "roomIntros": {
+    "combat": [
+      "Movement detected ahead.",
+      "This room reeks of violence.",
+      "Something waits in the shadows.",
+      "The arena awakens.",
+      "You hear metal scraping nearby.",
+      "A hostile presence blocks your path.",
+      "The floor is stained from countless battles.",
+      "Prepare for combat.",
+      "Your footsteps echo through the chamber.",
+      "This place was built for bloodshed.",
+      "The enemy knows you're here.",
+      "A challenge stands before you."
+    ],
+    "trap": [
+      "Something feels wrong here.",
+      "The air suddenly grows cold.",
+      "Watch your footing.",
+      "This corridor was designed to kill.",
+      "You hear mechanisms shifting nearby.",
+      "The walls themselves seem hostile.",
+      "A hidden danger activates.",
+      "One wrong step could end the run.",
+      "The floor trembles beneath you.",
+      "You sense old defenses awakening.",
+      "The path ahead is unstable.",
+      "The dungeon tests your awareness."
+    ],
+    "treasure": [
+      "A faint glow catches your eye.",
+      "You discover a hidden cache.",
+      "Treasure lies ahead.",
+      "The room is untouched… for now.",
+      "Something valuable survived the collapse.",
+      "A chest rests in the center of the room.",
+      "The scent of old metal fills the air.",
+      "You found a reward chamber.",
+      "Fortune favors the relentless.",
+      "A rare opportunity appears.",
+      "Supplies may still remain here.",
+      "The arena grants tribute."
+    ],
+    "rest": [
+      "You find temporary refuge.",
+      "The room feels strangely peaceful.",
+      "A safe place… at least for now.",
+      "You catch your breath.",
+      "A healing light glows softly nearby.",
+      "Silence replaces the chaos.",
+      "You recover for the battles ahead.",
+      "The pressure briefly fades.",
+      "A moment of calm settles over the arena.",
+      "Even warriors need rest.",
+      "The dungeon grants a brief reprieve.",
+      "You steady yourself."
+    ],
+    "boss": [
+      "The arena falls silent.",
+      "A monstrous presence approaches.",
+      "The final gate opens.",
+      "Something powerful waits beyond.",
+      "This chamber belongs to a champion.",
+      "The walls tremble with heavy footsteps.",
+      "You've reached the proving ground.",
+      "The boss senses your arrival.",
+      "The air grows heavy.",
+      "Only one side leaves victorious.",
+      "A legendary enemy emerges.",
+      "The crowd erupts as the boss awakens.",
+      "The gate seals behind you.",
+      "There is no retreat now.",
+      "The champion enters the arena.",
+      "A towering figure emerges from the darkness.",
+      "The final test begins.",
+      "You feel the pressure of countless fallen challengers.",
+      "The arena demands a victor.",
+      "Your journey has led to this moment."
+    ]
+  },
+  "returnRoomIntros": [
+    "This room feels different now.",
+    "Something has changed since your last visit.",
+    "The corruption spreads.",
+    "You notice signs of recent activity.",
+    "The enemy presence has intensified.",
+    "A hidden path reveals itself.",
+    "The room remembers your victory.",
+    "New danger emerges from old ruins."
+  ],
+  "postBossVictory": [
+    "The chamber grows silent.",
+    "The path forward unlocks.",
+    "The dungeon acknowledges your strength.",
+    "A new relic reveals itself.",
+    "The arena crown has changed hands.",
+    "You survived the impossible.",
+    "The corruption weakens.",
+    "The next challenge awaits."
+  ],
+  "acts": {
+    "1": {
+      "title": "Entry",
+      "transitions": [
+        "You descend into abandoned arenas and forgotten pits.",
+        "Collapsed training halls echo with old violence.",
+        "Cursed ruins swallow the light ahead.",
+        "The underground combat pit waits below."
+      ]
+    },
+    "2": {
+      "title": "Discovery",
+      "transitions": [
+        "The arena feels corrupted — champions twisted into monsters.",
+        "Relics pulse beneath the stone. Something controls these trials.",
+        "Rooms shift when you look away. The dungeon is alive."
+      ]
+    },
+    "3": {
+      "title": "Ascent",
+      "transitions": [
+        "Each victory draws you deeper. The arena grows hungrier.",
+        "Bosses fall, but the pressure never fades.",
+        "Fragments of power cling to you — the depths demand more."
+      ]
+    },
+    "4": {
+      "title": "Final Challenge",
+      "transitions": [
+        "The final gate looms. One champion remains.",
+        "Every fallen fighter led to this chamber.",
+        "The arena master will not yield easily."
+      ]
+    }
+  },
+  "entryReasons": [
+    "Searching for treasure.",
+    "Revenge drives you forward.",
+    "A rescue mission — someone is down here.",
+    "Survival tournament. No exit until you win.",
+    "This route may be your only escape.",
+    "Recover the lost relic before it corrupts further.",
+    "Bounty hunting — the arena owes a debt.",
+    "Prove your strength to the world above.",
+    "Reclaim what the city lost to the pits.",
+    "Investigate the disappearances.",
+    "Glory — or die trying.",
+    "A survival challenge you cannot refuse."
+  ],
+  "bossPurposes": [
+    "Gatekeeper of the next sector.",
+    "Corrupted champion of the old league.",
+    "Prison warden of the pit.",
+    "Guardian of the master key.",
+    "Arena ruler — crown or nothing.",
+    "Elite hunter sent to end intruders.",
+    "Failed experiment unleashed.",
+    "Ancient protector still standing watch."
+  ]
+}

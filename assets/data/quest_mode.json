@@ -1,0 +1,372 @@
+{
+  "version": 1,
+  "difficulties": [
+    {
+      "id": "normal",
+      "name": "Normal",
+      "playerHp": 8,
+      "enemyHpMult": 1.0,
+      "enemyAttackBonus": 0
+    },
+    {
+      "id": "hard",
+      "name": "Hard",
+      "playerHp": 6,
+      "enemyHpMult": 1.25,
+      "enemyAttackBonus": 1
+    }
+  ],
+  "dungeons": [
+    {
+      "id": "rust_arena",
+      "name": "Rust Arena",
+      "subtitle": "10 rooms · boss every 5",
+      "roomCount": 10,
+      "bossEvery": 5,
+      "enemyPool": ["rust_goblin", "dust_sprite", "iron_rat"],
+      "bossId": "iron_brute",
+      "rooms": [
+        { "type": "combat" },
+        { "type": "combat" },
+        { "type": "rest" },
+        { "type": "treasure" },
+        { "type": "boss" },
+        { "type": "combat" },
+        { "type": "trap" },
+        { "type": "treasure" },
+        { "type": "combat" },
+        { "type": "boss" }
+      ]
+    }
+  ],
+  "enemies": [
+    {
+      "id": "rust_goblin",
+      "name": "Rust Goblin",
+      "imageAsset": "assets/images/quest/rust_goblin.png",
+      "hp": 12,
+      "attack": 1,
+      "weakness": "diamonds",
+      "rewardXp": 5,
+      "rewardGold": 3,
+      "barks": {
+        "start": [
+          "Fresh meat enters the arena!",
+          "Rust eats everything eventually!",
+          "Tiny muscles. Big confidence.",
+          "I'm gonna scrape you apart!",
+          "Your reps end HERE!",
+          "Hope you stretched, weakling.",
+          "I smell fear and iron.",
+          "Another challenger to crush!"
+        ],
+        "pain": [
+          "Grrk! That burns!",
+          "You hit harder than expected!",
+          "Rust… cracking…",
+          "Stop moving around!",
+          "Uggh! My armor!",
+          "Cheap shot!",
+          "That rep counted?!",
+          "I hate cardio!"
+        ],
+        "playerFail": [
+          "Too weak!",
+          "That all you got?!",
+          "Pathetic form!",
+          "Your combo breaks EASY!",
+          "You're slowing down!",
+          "The arena owns you!",
+          "Weak knees!",
+          "Should've used modified mode!"
+        ],
+        "lowHealth": [
+          "I'm falling apart…",
+          "My bolts are loose…",
+          "This can't be happening…",
+          "Rust… consuming me…",
+          "One more hit and I'm scrap…",
+          "I underestimated you…",
+          "No… not like this…",
+          "System failure imminent…"
+        ],
+        "defeated": [
+          "Rust… to rust…",
+          "Impossible…",
+          "I… was… stronger…",
+          "The arena remembers…",
+          "You got lucky…",
+          "My scrap belongs to you now…",
+          "You've earned this victory…",
+          "I return to dust…"
+        ]
+      }
+    },
+    {
+      "id": "dust_sprite",
+      "name": "Dust Sprite",
+      "imageAsset": "assets/images/quest/dust_sprite.png",
+      "hp": 10,
+      "attack": 1,
+      "weakness": "hearts",
+      "rewardXp": 4,
+      "rewardGold": 2,
+      "barks": {
+        "start": [
+          "Who disturbs the dust?",
+          "Tiny feet stomp too loud.",
+          "You breathe too heavy.",
+          "The arena whispers your doom.",
+          "Catch me if you can!",
+          "Let's see your endurance.",
+          "Dust never dies.",
+          "You'll choke before I fade."
+        ],
+        "pain": [
+          "Pfft! You sting!",
+          "Ow! Too fast!",
+          "The wind shifts!",
+          "You hit air and STILL hurt me!",
+          "No fair!",
+          "Stop sweating on me!",
+          "That combo's annoying!",
+          "You move surprisingly well…"
+        ],
+        "playerFail": [
+          "Too slow!",
+          "You can't catch me!",
+          "Out of breath already?",
+          "The dust settles on losers.",
+          "Your rhythm broke!",
+          "Trip over your own feet!",
+          "Weak stamina detected.",
+          "You missed your timing!"
+        ],
+        "lowHealth": [
+          "Fading… away…",
+          "The wind weakens…",
+          "I'm scattering…",
+          "My form won't hold…",
+          "No… the arena forgets me…",
+          "I'm becoming nothing…",
+          "You're stronger than you look…",
+          "This dust returns to silence…"
+        ],
+        "defeated": [
+          "Gone with the wind…",
+          "The dust settles…",
+          "You earned this victory…",
+          "I disappear…",
+          "The arena consumes all…",
+          "I return to the shadows…",
+          "Even dust can fall…",
+          "You survived…"
+        ]
+      }
+    },
+    {
+      "id": "iron_rat",
+      "name": "Iron Rat",
+      "imageAsset": "assets/images/quest/iron_rat.png",
+      "hp": 14,
+      "attack": 2,
+      "weakness": "clubs",
+      "rewardXp": 6,
+      "rewardGold": 4,
+      "barks": {
+        "start": [
+          "Squeak! Mine now!",
+          "I steal your victory!",
+          "You enter MY tunnels!",
+          "Fight dirty or lose.",
+          "You smell weak.",
+          "Your loot belongs to me.",
+          "I bite harder than you punch.",
+          "Arena scraps are MY scraps!"
+        ],
+        "pain": [
+          "Skrik! You'll pay!",
+          "My tail!",
+          "Dirty fighter!",
+          "You cracked my plating!",
+          "I hate pushups!",
+          "Too much pressure!",
+          "Back off!",
+          "You move like a machine!"
+        ],
+        "playerFail": [
+          "Too slow, human!",
+          "Your footing failed!",
+          "Weak reflexes!",
+          "You're trapped now!",
+          "The rat survives!",
+          "You dropped your guard!",
+          "Can't keep up?",
+          "You lose!"
+        ],
+        "lowHealth": [
+          "Bzzt… system failing…",
+          "My circuits…",
+          "No more running…",
+          "This scrap heap hurts…",
+          "You cornered me…",
+          "Retreat impossible…",
+          "I can barely move…",
+          "My metal's cracking…"
+        ],
+        "defeated": [
+          "Circuit… dead…",
+          "The rat falls…",
+          "Impossible…",
+          "No scraps left…",
+          "You win this tunnel…",
+          "I should've fled…",
+          "Systems shutting down…",
+          "Skrik… silence…"
+        ]
+      }
+    },
+    {
+      "id": "iron_brute",
+      "name": "Iron Brute",
+      "imageAsset": "assets/images/quest/iron_brute.png",
+      "hp": 28,
+      "attack": 2,
+      "weakness": "spades",
+      "rewardXp": 15,
+      "rewardGold": 10,
+      "isBoss": true,
+      "barks": {
+        "start": [
+          "YOU DARE CHALLENGE ME?",
+          "THE ARENA DEMANDS STRENGTH!",
+          "I BREAK CHAMPIONS!",
+          "ONLY THE STRONG SURVIVE!",
+          "YOUR REPS MEAN NOTHING!",
+          "COME FORWARD, CONTENDER!",
+          "YOU ENTER THE FINAL ROUND!",
+          "I AM THE IRON BRUTE!"
+        ],
+        "pain": [
+          "IMPOSSIBLE…!",
+          "YOU STRIKE HARD…",
+          "MY ARMOR… CRACKING…",
+          "YOU EARN MY RESPECT.",
+          "YOUR WILL IS STRONG.",
+          "I HAVEN'T FELT PAIN IN YEARS.",
+          "THIS BATTLE PLEASES ME.",
+          "YOU PUSH BEYOND LIMITS!"
+        ],
+        "playerFail": [
+          "KNEEL BEFORE ME!",
+          "WEAKNESS EXPOSED!",
+          "YOUR FORM COLLAPSES!",
+          "YOU LACK DISCIPLINE!",
+          "THE ARENA REJECTS YOU!",
+          "YOUR COMBO DIES HERE!",
+          "YOU CANNOT ENDURE!",
+          "FALL!"
+        ],
+        "lowHealth": [
+          "THIS… CANNOT BE…",
+          "MY ARMOR FAILS…",
+          "YOU MAY ACTUALLY WIN…",
+          "THE CROWD CHANTS YOUR NAME…",
+          "YOU'VE GROWN STRONGER…",
+          "NO… NOT YET…",
+          "I WILL NOT FALL!",
+          "THE IRON BRUTE ENDURES!"
+        ],
+        "defeated": [
+          "THE TITLE… IS YOURS…",
+          "YOU HAVE EARNED VICTORY.",
+          "THE ARENA REMEMBERS YOU.",
+          "I FALL… BUT YOU RISE.",
+          "YOUR STRENGTH SURPASSES MINE.",
+          "THE CROWD CHOOSES A NEW CHAMPION.",
+          "YOU ARE WORTHY.",
+          "CHAMPION…"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "protein_shake",
+      "name": "Protein Shake",
+      "imageAsset": "assets/images/quest/protein_shake.png",
+      "rarity": "common",
+      "type": "consumable",
+      "description": "Heal 1 HP.",
+      "effects": { "healHp": 1 }
+    },
+    {
+      "id": "skip_token",
+      "name": "Skip Token",
+      "imageAsset": "assets/images/quest/skip_token.png",
+      "rarity": "common",
+      "type": "consumable",
+      "description": "Gain 1 skip.",
+      "effects": { "addSkips": 1 }
+    },
+    {
+      "id": "armor_plate",
+      "name": "Armor Plate",
+      "imageAsset": "assets/images/quest/armor_plate.png",
+      "rarity": "common",
+      "type": "consumable",
+      "description": "Gain 1 armor.",
+      "effects": { "addArmor": 1 }
+    },
+    {
+      "id": "energy_drink",
+      "name": "Energy Drink",
+      "imageAsset": "assets/images/quest/armor_plate.png",
+      "rarity": "rare",
+      "type": "consumable",
+      "description": "Gain 1 armor.",
+      "effects": { "addArmor": 1 }
+    },
+    {
+      "id": "lucky_card",
+      "name": "Lucky Card",
+      "imageAsset": "assets/images/quest/lucky_card.png",
+      "rarity": "rare",
+      "type": "consumable",
+      "description": "Redraw your current card once.",
+      "effects": { "redraw": 1 }
+    },
+    {
+      "id": "combo_charm",
+      "name": "Combo Charm",
+      "imageAsset": "assets/images/quest/combo_charm.png",
+      "rarity": "rare",
+      "type": "relic",
+      "description": "Combo milestones grant +2 bonus gold.",
+      "effects": { "comboGoldBonus": 2 }
+    },
+    {
+      "id": "crown_of_kings",
+      "name": "Crown of Kings",
+      "imageAsset": "assets/images/quest/crown_of_kings.png",
+      "rarity": "epic",
+      "type": "relic",
+      "description": "Queen passes also grant +1 armor.",
+      "effects": { "queenBonusArmor": 1 }
+    },
+    {
+      "id": "titan_heart",
+      "name": "Titan Heart",
+      "imageAsset": "assets/images/quest/titan_heart.png",
+      "rarity": "legendary",
+      "type": "relic",
+      "description": "+2 max HP for this run.",
+      "effects": { "maxHpBonus": 2 }
+    }
+  ],
+  "lootTables": {
+    "normal": ["protein_shake", "skip_token", "armor_plate"],
+    "treasure": ["energy_drink", "lucky_card", "combo_charm"],
+    "boss": ["combo_charm", "crown_of_kings", "titan_heart"]
+  }
+}
