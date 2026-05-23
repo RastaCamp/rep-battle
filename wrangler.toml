@@ -1,3 +1,4 @@
-name = "rep-battle"
+# Leerie account (0f42c247e489dce80771116c30c57c3e) — see gap/deploy/LEERIE_ACCOUNT_SETUP.md
+name = "rastacamp-rep-battle"
 compatibility_date = "2026-05-19"
 pages_build_output_dir = "build/web"
