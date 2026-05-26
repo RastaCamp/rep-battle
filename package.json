@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "build": "node scripts/build-web.mjs",
-    "deploy": "npm run build && npx wrangler pages deploy build/web --project-name=rastacamp-rep-battle --branch=master"
+    "deploy": "npm run build && npx wrangler pages deploy build/web --project-name=rep-battle --branch=master"
   },
   "devDependencies": {
     "wrangler": "^4.67.0"
