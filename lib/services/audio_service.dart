@@ -44,11 +44,13 @@ enum SfxType {
   enemyDefeated,
   inventory,
   forfeit,
+  chatter,
 }
 
 class AudioService {
   final AudioPlayer _musicPlayer = AudioPlayer();
   final AudioPlayer _sfxPlayer = AudioPlayer();
+  final AudioPlayer _chatterPlayer = AudioPlayer();
   late final AudioCache _assetCache;
   final Random _rng = Random();
 
@@ -66,16 +68,48 @@ class AudioService {
   bool _musicBlocked = false;
   MusicScope? _blockedScope;
   bool _blockedProTitle = false;
+  bool _chatterActive = false;
+  bool _chatterForBark = false;
+
+  static const _chatterPath = 'assets/audio/sfx/crowd_cheer.mp3';
 
   Future<void> init() async {
     if (_initialized) return;
     _initialized = true;
-    // audioplayers web builds URLs as `assets/$prefix$file`. Default prefix is
-    // `assets/`, which doubles the path. Use empty prefix on web only.
+
+    if (!kIsWeb) {
+      await AudioPlayer.global.setAudioContext(
+        AudioContext(
+          android: const AudioContextAndroid(
+            isSpeakerphoneOn: false,
+            stayAwake: true,
+            contentType: AndroidContentType.music,
+            usageType: AndroidUsageType.game,
+            audioFocus: AndroidAudioFocus.gain,
+          ),
+          iOS: AudioContextIOS(
+            category: AVAudioSessionCategory.playback,
+            options: {
+              AVAudioSessionOptions.mixWithOthers,
+              AVAudioSessionOptions.duckOthers,
+            },
+          ),
+        ),
+      );
+    }
+
     _assetCache = AudioCache(prefix: kIsWeb ? '' : 'assets/');
     _musicPlayer.audioCache = _assetCache;
     _sfxPlayer.audioCache = _assetCache;
+    _chatterPlayer.audioCache = _assetCache;
+
+    await _musicPlayer.setPlayerMode(PlayerMode.mediaPlayer);
+    await _sfxPlayer.setPlayerMode(PlayerMode.lowLatency);
+    await _chatterPlayer.setPlayerMode(PlayerMode.mediaPlayer);
+
     await _musicPlayer.setReleaseMode(ReleaseMode.release);
+    await _chatterPlayer.setReleaseMode(ReleaseMode.loop);
+
     _musicCompleteSub = _musicPlayer.onPlayerComplete.listen((_) {
       _onMusicComplete();
     });
@@ -95,22 +129,62 @@ class AudioService {
 
   Future<void> dispose() async {
     await _musicCompleteSub?.cancel();
+    await stopChatter();
     await _musicPlayer.dispose();
     await _sfxPlayer.dispose();
+    await _chatterPlayer.dispose();
   }
 
   Future<void> playSfx(SfxType type) async {
     if (!soundEnabled) return;
     final path = AudioCatalog.pickSfx(type.name, _rng);
     if (path.isNotEmpty && await _assetExists(path)) {
-      await _playSfxAsset(path);
+      unawaited(_playSfxAsset(path));
       return;
     }
     final (freq, ms, vol) = _toneParams(type);
-    await _playTone(freq, ms, vol * sfxVolume);
+    unawaited(_playTone(freq, ms, vol * sfxVolume));
   }
 
-  /// Push a screen music layer; returns a token for [leaveMusicScope].
+  /// Loop crowd chatter while an NPC comment is on screen.
+  Future<void> startChatterForBark() async {
+    if (!soundEnabled || _chatterForBark) return;
+    _chatterForBark = true;
+    await _playChatter(loop: true);
+  }
+
+  /// Short ambient crowd burst during gameplay (not tied to a bark).
+  Future<void> playAmbientChatter() async {
+    if (!soundEnabled || _chatterForBark) return;
+    if (_chatterActive) return;
+    await _playChatter(loop: false);
+  }
+
+  Future<void> stopChatter() async {
+    _chatterForBark = false;
+    if (!_chatterActive) return;
+    _chatterActive = false;
+    await _chatterPlayer.stop();
+  }
+
+  Future<void> _playChatter({required bool loop}) async {
+    if (!await _assetExists(_chatterPath)) return;
+    _chatterActive = true;
+    await _chatterPlayer.setReleaseMode(
+      loop ? ReleaseMode.loop : ReleaseMode.release,
+    );
+    await _chatterPlayer.setVolume((sfxVolume * 0.55).clamp(0.0, 1.0));
+    try {
+      await _chatterPlayer.play(AssetSource(_playerAssetPath(_chatterPath)));
+      if (!loop) {
+        _chatterActive = false;
+      }
+    } catch (e) {
+      debugPrint('Chatter play failed: $e');
+      _chatterActive = false;
+    }
+  }
+
   Object enterMusicScope(MusicScope scope, {bool proTitle = false}) {
     final token = Object();
     _scopeStack.add(
@@ -145,7 +219,6 @@ class AudioService {
     }
   }
 
-  /// Call once after bootstrap so title music begins immediately (splash/title).
   Future<void> startAppMusic({required bool proTitle}) async {
     _menuProTitle = proTitle;
     if (_scopeStack.isEmpty) {
@@ -159,41 +232,49 @@ class AudioService {
     switch (scope) {
       case MusicScope.title:
       case MusicScope.matchIntro:
-        await playMusic('menu', proTitle: proTitle, force: true);
+        await playMusic('menu', proTitle: proTitle);
       case MusicScope.settings:
-        await playMusic('settings', force: true);
+        await playMusic('settings');
       case MusicScope.questSetup:
-        await playMusic('quest_menu', force: true);
+        await playMusic('quest_menu');
       case MusicScope.questGameplay:
-        await playMusic('quest', force: true);
+        await playMusic('quest');
       case MusicScope.gameplay:
-        await playMusic('gameplay', force: true);
+        await playMusic('gameplay');
       case MusicScope.scoreboard:
-        await playMusic('scoreboard', force: true);
+        await playMusic('scoreboard');
     }
   }
 
-  /// [theme]: menu, gameplay, quest, quest_menu, settings, scoreboard
   Future<void> playMusic(
     String theme, {
     bool proTitle = false,
     bool force = false,
   }) async {
     if (!musicEnabled) return;
-    if (!force &&
-        _musicTheme == theme &&
+
+    final sameGameplay =
+        theme == 'gameplay' && _musicTheme == 'gameplay' && _currentMusicPath != null;
+    final sameMenu = theme == 'menu' &&
+        _musicTheme == 'menu' &&
         _currentMusicPath != null &&
-        (theme != 'menu' || _menuProTitle == proTitle)) {
+        _menuProTitle == proTitle;
+    final sameOther = theme == _musicTheme &&
+        _currentMusicPath != null &&
+        theme != 'gameplay' &&
+        theme != 'menu';
+
+    if (!force && (sameGameplay || sameMenu || sameOther)) {
       return;
     }
 
     _musicTheme = theme;
     if (theme == 'menu') _menuProTitle = proTitle;
-    await _musicPlayer.stop();
 
     switch (theme) {
       case 'menu':
-        final path = proTitle ? AudioCatalog.titleMusicPro : AudioCatalog.titleMusic;
+        final path =
+            proTitle ? AudioCatalog.titleMusicPro : AudioCatalog.titleMusic;
         await _playAsset(path, loop: true);
       case 'quest_menu':
         await _playAsset(AudioCatalog.questMenuMusic, loop: true);
@@ -208,6 +289,7 @@ class AudioService {
       default:
         _musicTheme = null;
         _currentMusicPath = null;
+        await _musicPlayer.stop();
     }
   }
 
@@ -227,21 +309,25 @@ class AudioService {
 
   Future<void> _playAsset(String path, {required bool loop}) async {
     if (!await _assetExists(path)) return;
-    _currentMusicPath = path;
-    await _musicPlayer.setReleaseMode(
-      loop ? ReleaseMode.loop : ReleaseMode.release,
-    );
-    await _musicPlayer.setVolume(musicVolume.clamp(0.0, 1.0));
-    try {
-      await _musicPlayer.play(AssetSource(_playerAssetPath(path)));
-      _musicBlocked = false;
-    } catch (e) {
-      debugPrint('Music play blocked or failed: $e');
-      _musicBlocked = true;
-      if (_scopeStack.isNotEmpty) {
-        final top = _scopeStack.last;
-        _blockedScope = top.scope;
-        _blockedProTitle = top.proTitle;
+
+    final switchingTrack = _currentMusicPath != path;
+    if (switchingTrack) {
+      _currentMusicPath = path;
+      await _musicPlayer.setReleaseMode(
+        loop ? ReleaseMode.loop : ReleaseMode.release,
+      );
+      await _musicPlayer.setVolume(musicVolume.clamp(0.0, 1.0));
+      try {
+        await _musicPlayer.play(AssetSource(_playerAssetPath(path)));
+        _musicBlocked = false;
+      } catch (e) {
+        debugPrint('Music play blocked or failed: $e');
+        _musicBlocked = true;
+        if (_scopeStack.isNotEmpty) {
+          final top = _scopeStack.last;
+          _blockedScope = top.scope;
+          _blockedProTitle = top.proTitle;
+        }
       }
     }
   }
@@ -251,7 +337,6 @@ class AudioService {
     await _sfxPlayer.play(AssetSource(_playerAssetPath(path)));
   }
 
-  /// For [AssetSource] / [AudioCache]: `audio/...` (no `assets/` prefix).
   String _playerAssetPath(String bundlePath) {
     if (bundlePath.startsWith('assets/')) {
       return bundlePath.substring(7);
@@ -280,6 +365,9 @@ class AudioService {
   Future<void> applyVolumes() async {
     await _musicPlayer.setVolume(musicVolume.clamp(0.0, 1.0));
     await _sfxPlayer.setVolume(sfxVolume.clamp(0.0, 1.0));
+    if (_chatterActive) {
+      await _chatterPlayer.setVolume((sfxVolume * 0.55).clamp(0.0, 1.0));
+    }
   }
 
   Future<void> syncMusicEnabled() async {
@@ -325,6 +413,7 @@ class AudioService {
         SfxType.enemyDefeated => (440.0, 250, 0.4),
         SfxType.inventory => (350.0, 120, 0.35),
         SfxType.forfeit => (100.0, 400, 0.4),
+        SfxType.chatter => (523.0, 400, 0.35),
       };
 
   void hapticLight() {

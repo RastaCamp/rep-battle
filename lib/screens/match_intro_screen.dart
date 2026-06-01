@@ -3,10 +3,7 @@ import 'package:provider/provider.dart';
 
 import '../controllers/game_controller.dart';
 import '../core/theme/app_theme.dart';
-import '../core/music/music_scope.dart';
 import '../services/audio_service.dart';
-import '../services/entitlement_service.dart';
-import '../widgets/music_scope_host.dart';
 import '../widgets/card_shuffle_animation.dart';
 
 class MatchIntroScreen extends StatefulWidget {
@@ -49,11 +46,7 @@ class _MatchIntroScreenState extends State<MatchIntroScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final pro = context.watch<EntitlementService>().isPro;
-    return MusicScopeHost(
-      scope: MusicScope.matchIntro,
-      proTitle: pro,
-      child: Scaffold(
+    return Scaffold(
       backgroundColor: AppTheme.arenaBlack,
       body: Center(
         child: Column(
@@ -72,7 +65,6 @@ class _MatchIntroScreenState extends State<MatchIntroScreen> {
           ],
         ),
       ),
-    ),
     );
   }
 }

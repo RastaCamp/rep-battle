@@ -9,9 +9,7 @@ import '../core/engine/ability_modifier_engine.dart';
 import '../core/models/game_card.dart';
 import '../core/models/match_state.dart';
 import '../core/theme/app_theme.dart';
-import '../core/music/music_scope.dart';
 import '../services/audio_service.dart';
-import '../widgets/music_scope_host.dart';
 import '../widgets/combo_meter.dart';
 import '../widgets/deck_pile_row.dart';
 import '../widgets/game_overlays.dart';
@@ -133,9 +131,7 @@ class _GameScreenState extends State<GameScreen> with WidgetsBindingObserver {
     final bgTop = Color.lerp(turnColor, AppTheme.arenaBlack, 0.72)!;
     final bgBottom = Color.lerp(turnColor, AppTheme.arenaBlack, 0.88)!;
 
-    return MusicScopeHost(
-      scope: MusicScope.gameplay,
-      child: Scaffold(
+    return Scaffold(
       body: Stack(
         children: [
           Container(
@@ -384,7 +380,6 @@ class _GameScreenState extends State<GameScreen> with WidgetsBindingObserver {
           if (game.showArmorBreakOverlay) const ArmorBreakOverlay(),
         ],
       ),
-    ),
     );
   }
 

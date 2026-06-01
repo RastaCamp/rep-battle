@@ -15,6 +15,7 @@ import '../core/models/match_house_rules.dart';
 import '../core/models/match_state.dart';
 import '../core/models/npc_bark.dart';
 import '../core/models/player_state.dart';
+import '../core/music/music_scope.dart';
 import '../services/achievement_service.dart';
 import '../services/audio_service.dart';
 import '../services/custom_card_service.dart';
@@ -98,6 +99,8 @@ class GameController extends ChangeNotifier {
   }
   NpcBark? activeNpcBark;
   Timer? _npcBarkTimer;
+  Timer? _ambientChatterTimer;
+  Object? _matchMusicToken;
   final _rng = Random();
   static const _npcBarkChance = 0.34;
   static const _npcBarkLegendaryChance = 0.07;
@@ -159,6 +162,8 @@ class GameController extends ChangeNotifier {
     match = saved;
     currentMode = rules!.mode(saved.modeId);
     engine = MatchEngine(rules: rules!, mode: currentMode!);
+    _enterMatchMusic();
+    _startAmbientChatter();
     notifyListeners();
     return true;
   }
@@ -207,8 +212,21 @@ class GameController extends ChangeNotifier {
     match!.reshuffleEnabled = currentMode!.reshuffleOnEmpty;
     _undoStack.clear();
     _pushUndo();
+    _enterMatchMusic();
     await _autoSave();
     notifyListeners();
+  }
+
+  void _enterMatchMusic() {
+    _leaveMatchMusic();
+    _matchMusicToken = audio.enterMusicScope(MusicScope.gameplay);
+  }
+
+  void _leaveMatchMusic() {
+    if (_matchMusicToken != null) {
+      audio.leaveMusicScope(_matchMusicToken!);
+      _matchMusicToken = null;
+    }
   }
 
   void beginGameplay() {
@@ -217,6 +235,7 @@ class GameController extends ChangeNotifier {
     match!.phase = MatchPhase.draw;
     audio.playSfx(SfxType.begin);
     _startAutoSaveLoop();
+    _startAmbientChatter();
     _scheduleMatchStartBarks();
     notifyListeners();
     if (match!.currentPlayer.isCpu) {
@@ -266,8 +285,10 @@ class GameController extends ChangeNotifier {
 
     switch (type) {
       case TurnResultType.pass:
-        await audio.playSfx(SfxType.pass);
-        await audio.playSfx(SfxType.crowdCheer);
+        audio.playSfx(SfxType.pass);
+        if (_rng.nextDouble() < 0.4) {
+          unawaited(audio.playAmbientChatter());
+        }
         audio.hapticLight();
       case TurnResultType.modified:
         await audio.playSfx(SfxType.pass);
@@ -669,11 +690,11 @@ class GameController extends ChangeNotifier {
         message: line,
         kind: kindToUse,
       );
+      unawaited(audio.startChatterForBark());
       _npcBarkTimer = Timer(
         const Duration(milliseconds: _npcBarkDurationMs),
         () {
-          activeNpcBark = null;
-          notifyListeners();
+          _dismissNpcBark();
         },
       );
       notifyListeners();
@@ -686,10 +707,43 @@ class GameController extends ChangeNotifier {
     }
   }
 
+  void _dismissNpcBark() {
+    activeNpcBark = null;
+    unawaited(audio.stopChatter());
+    notifyListeners();
+  }
+
   void _clearNpcBark() {
     _npcBarkTimer?.cancel();
     _npcBarkTimer = null;
-    activeNpcBark = null;
+    if (activeNpcBark != null) {
+      _dismissNpcBark();
+    } else {
+      unawaited(audio.stopChatter());
+    }
+  }
+
+  void _startAmbientChatter() {
+    _ambientChatterTimer?.cancel();
+    _scheduleNextAmbientChatter();
+  }
+
+  void _scheduleNextAmbientChatter() {
+    _ambientChatterTimer?.cancel();
+    final delaySec = 28 + _rng.nextInt(22);
+    _ambientChatterTimer = Timer(Duration(seconds: delaySec), () {
+      if (match == null || match!.matchOver || paused) return;
+      if (activeNpcBark == null && _rng.nextDouble() < 0.45) {
+        unawaited(audio.playAmbientChatter());
+      }
+      _scheduleNextAmbientChatter();
+    });
+  }
+
+  void _stopAmbientChatter() {
+    _ambientChatterTimer?.cancel();
+    _ambientChatterTimer = null;
+    unawaited(audio.stopChatter());
   }
 
   Future<void> undoLastResult() async {
@@ -807,6 +861,9 @@ class GameController extends ChangeNotifier {
     soloCanContinuePractice = _computeSoloContinueOffer();
     _matchTimer?.cancel();
     _autoSaveTimer?.cancel();
+    _stopAmbientChatter();
+    _clearNpcBark();
+    _leaveMatchMusic();
     await audio.stopMusic();
     if (!forfeited) {
       await audio.playSfx(SfxType.victory);
@@ -957,6 +1014,8 @@ class GameController extends ChangeNotifier {
   }
 
   void clearMatch() {
+    _stopAmbientChatter();
+    _leaveMatchMusic();
     match = null;
     _undoStack.clear();
     _matchTimer?.cancel();

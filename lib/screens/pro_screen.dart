@@ -1,9 +1,11 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../controllers/game_controller.dart';
 import '../core/config/deck_art_style.dart';
 import '../core/theme/app_theme.dart';
+import '../services/billing_service.dart';
 import '../services/card_back_catalog.dart';
 import '../services/entitlement_service.dart';
 import '../widgets/arena_button.dart';
@@ -27,6 +29,7 @@ class ProScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final ent = context.watch<EntitlementService>();
+    final billing = context.watch<BillingService>();
     final game = context.watch<GameController>();
     final s = game.settings;
 
@@ -131,17 +134,60 @@ class ProScreen extends StatelessWidget {
             ),
           ],
           const SizedBox(height: 24),
-          ArenaButton(
-            label: ent.isPro ? 'PRO ACTIVE (DEV)' : 'UNLOCK PRO (DEV TOGGLE)',
-            glowColor: Colors.amber,
-            large: true,
-            onPressed: ent.toggleProForDev,
-          ),
+          if (ent.isPro)
+            const ArenaButton(
+              label: 'PRO ACTIVE',
+              glowColor: Colors.greenAccent,
+              large: true,
+              onPressed: null,
+            )
+          else ...[
+            ArenaButton(
+              label: billing.purchasePending
+                  ? 'PROCESSING…'
+                  : 'UNLOCK PRO — ${billing.proPriceLabel}',
+              glowColor: Colors.amber,
+              large: true,
+              onPressed:
+                  billing.purchasePending ? null : () => billing.buyPro(),
+            ),
+            const SizedBox(height: 12),
+            TextButton(
+              onPressed: billing.purchasePending
+                  ? null
+                  : () => billing.restorePurchases(),
+              child: const Text('Restore purchase'),
+            ),
+          ],
+          if (billing.lastError != null) ...[
+            const SizedBox(height: 8),
+            Text(
+              billing.lastError!,
+              textAlign: TextAlign.center,
+              style: const TextStyle(color: Colors.redAccent, fontSize: 12),
+            ),
+          ],
+          if (!billing.storeAvailable && !ent.isPro) ...[
+            const SizedBox(height: 8),
+            const Text(
+              'Play Store billing is unavailable on this device. '
+              'Install from Google Play to purchase.',
+              textAlign: TextAlign.center,
+              style: TextStyle(color: Colors.white38, fontSize: 12),
+            ),
+          ],
+          if (kDebugMode) ...[
+            const SizedBox(height: 24),
+            ArenaButton(
+              label: ent.isPro ? 'DEV: DISABLE PRO' : 'DEV: ENABLE PRO',
+              onPressed: ent.toggleProForDev,
+            ),
+          ],
           const SizedBox(height: 12),
           const Text(
-            'One-time purchase via Google Play Billing — coming soon.',
+            'One-time purchase. Product id: rep_battle_pro (configure \$4.99 USD in Play Console).',
             textAlign: TextAlign.center,
-            style: TextStyle(color: Colors.white38, fontSize: 12),
+            style: TextStyle(color: Colors.white38, fontSize: 11),
           ),
         ],
       ),

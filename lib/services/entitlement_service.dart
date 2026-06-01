@@ -49,6 +49,13 @@ class EntitlementService extends ChangeNotifier {
     return false;
   }
 
+  Future<void> grantProFromPurchase() async {
+    if (isPro) return;
+    isPro = true;
+    await _persist();
+    notifyListeners();
+  }
+
   Future<void> toggleProForDev() async {
     isPro = !isPro;
     await _persist();

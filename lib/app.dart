@@ -8,6 +8,7 @@ import 'screens/game_screen.dart';
 import 'screens/splash_screen.dart';
 import 'screens/title_screen.dart';
 import 'services/audio_service.dart';
+import 'services/billing_service.dart';
 import 'services/custom_card_service.dart';
 import 'services/entitlement_service.dart';
 import 'services/save_service.dart';
@@ -23,6 +24,7 @@ class _RepBattleAppState extends State<RepBattleApp> with WidgetsBindingObserver
   late final SaveService _saveService;
   late final AudioService _audioService;
   late final EntitlementService _entitlementService;
+  late final BillingService _billingService;
   late final CustomCardService _customCardService;
   late final GameController _gameController;
   late final QuestController _questController;
@@ -36,6 +38,7 @@ class _RepBattleAppState extends State<RepBattleApp> with WidgetsBindingObserver
     _saveService = SaveService();
     _audioService = AudioService();
     _entitlementService = EntitlementService(_saveService);
+    _billingService = BillingService(_entitlementService);
     _customCardService = CustomCardService();
     _gameController = GameController(
       saveService: _saveService,
@@ -54,6 +57,7 @@ class _RepBattleAppState extends State<RepBattleApp> with WidgetsBindingObserver
     await _audioService.init();
     await _customCardService.load();
     await _entitlementService.load();
+    await _billingService.init();
     await _gameController.initialize();
     await _questController.initialize();
     await _gameController.tryResumeMatch();
@@ -76,6 +80,7 @@ class _RepBattleAppState extends State<RepBattleApp> with WidgetsBindingObserver
   void dispose() {
     WidgetsBinding.instance.removeObserver(this);
     _audioService.dispose();
+    _billingService.dispose();
     _gameController.dispose();
     _questController.dispose();
     super.dispose();
@@ -97,6 +102,7 @@ class _RepBattleAppState extends State<RepBattleApp> with WidgetsBindingObserver
         Provider.value(value: _saveService),
         Provider.value(value: _audioService),
         ChangeNotifierProvider.value(value: _entitlementService),
+        ChangeNotifierProvider.value(value: _billingService),
         ChangeNotifierProvider.value(value: _customCardService),
         ChangeNotifierProvider.value(value: _gameController),
         ChangeNotifierProvider.value(value: _questController),

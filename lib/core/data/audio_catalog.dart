@@ -70,6 +70,7 @@ class AudioCatalog {
     'lifeLost': ['$_base/sfx/life_lost.mp3'],
     'armorBreak': ['$_base/sfx/armor_break.mp3'],
     'crowdCheer': ['$_base/sfx/crowd_cheer.mp3'],
+    'chatter': ['$_base/sfx/crowd_cheer.mp3'],
     'crowdBoo': declinePool,
     'eliminated': forfeitPool,
     'king': ['$_base/sfx/begin.mp3'],
